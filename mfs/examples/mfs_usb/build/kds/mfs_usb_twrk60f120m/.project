@@ -1,0 +1,49 @@
+<?xml version="1.0"?><projectDescription>
+
+	<name>mfs_usb_twrk60f120m</name>
+
+	<comment></comment>
+
+	<projects>
+
+	</projects>
+
+	<buildSpec>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+
+			<triggers>clean,full,incremental,</triggers>
+
+			<arguments>
+
+			</arguments>
+
+		</buildCommand>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+
+			<triggers>full,incremental,</triggers>
+
+			<arguments>
+
+			</arguments>
+
+		</buildCommand>
+
+	</buildSpec>
+
+	<natures>
+
+		<nature>org.eclipse.cdt.core.cnature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+
+	</natures>
+
+<linkedResources><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/usb_task.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_task.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/usb_task.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_task.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/usb_file.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_file.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/usb_file.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_file.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/usb_classes.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_classes.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/usb_classes.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_classes.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/tasks.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/tasks.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/shell_task.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/shell_task.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/mfs_usb.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/mfs_usb.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/command_lists.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/command_lists.c</locationURI></link></linkedResources><variableList><variable><name>MQX_ROOT_DIR</name><value>${PROJECT_LOC}/../../../../../..</value></variable></variableList></projectDescription>

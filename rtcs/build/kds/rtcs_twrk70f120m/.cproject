@@ -1,0 +1,325 @@
+<?xml version="1.0" standalone="no"?><?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+
+		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.lib.debug.202482942">
+
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.lib.debug.202482942" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+
+				<externalSettings>
+
+					<externalSetting>
+
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/lib"/>
+
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/lib/Debug"/>
+
+						<entry flags="RESOLVED" kind="libraryFile" name="lib" srcPrefixMapping="" srcRootPath=""/>
+
+					</externalSetting>
+
+				</externalSettings>
+
+				<extensions>
+
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+
+				</extensions>
+
+			<macros><stringMacro name="MQX_ROOT_DIR" value="${ProjDirPath}/../../../.."></stringMacro></macros></storageModule>
+
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+
+				<configuration buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="${cross_rm} -rf" description="" id="ilg.gnuarmeclipse.managedbuild.cross.config.lib.debug.202482942" name="Debug" parent="ilg.gnuarmeclipse.managedbuild.cross.config.lib.debug" artifactExtension="a" artifactName="${ProjDirPath}/../../../../lib/twrk70f120m.kds/debug/rtcs/rtcs" postbuildStep="${MQX_ROOT_DIR}/rtcs/build/bat/rtcs_twrk70f120m.sh ${MQX_ROOT_DIR} ${MQX_ROOT_DIR}/lib/twrk70f120m.kds/debug/rtcs kds" prebuildStep="mkdir -p &quot;${ProjDirPath}/../../../../lib/twrk70f120m.kds/debug/rtcs&quot;">
+
+					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.lib.debug.202482942." name="/" resourcePath="">
+
+						<toolChain id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.lib.debug.996693362" name="Cross ARM GCC" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.lib.debug">
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.796587111" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" valueType="enumerated" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.none"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.1224748884" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength" value="true" valueType="boolean"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar.2130847531" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar" value="true" valueType="boolean"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections.1346410345" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections" valueType="boolean" value="true"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections.827991593" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections" valueType="boolean" value="true"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn.145353097" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn" valueType="boolean" value="true"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.675960573" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level" valueType="enumerated" value="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.238231938" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format" value="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.dwarf2"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.432753372" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name" value="GNU Tools for ARM Embedded Processors" valueType="string"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.361781279" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.architecture" value="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm" valueType="enumerated"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family.927726466" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family" valueType="enumerated" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.68971486" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset" valueType="enumerated" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.395485188" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix" value="arm-none-eabi-" valueType="string"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.547217322" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.c" value="gcc" valueType="string"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.1686964089" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp" value="g++" valueType="string"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar.939047913" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar" value="ar" valueType="string"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.1397829936" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.make" value="make" valueType="string"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.2004108977" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm" value="rm" valueType="string"/>
+
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.481696976" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
+
+							<builder buildPath="${workspace_loc:/lib}/Debug" id="ilg.gnuarmeclipse.managedbuild.cross.builder.1560199569" managedBuildOn="true" name="Gnu Make Builder.Debug" superClass="org.eclipse.cdt.build.core.internal.builder"/>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.111173387" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.1630960224" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
+
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.1610758152" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.6806335449" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols"><listOptionValue builtIn="false" value="&quot;_DEBUG=1&quot;"></listOptionValue></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.879516601" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" valueType="includePath"><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../source/include&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/adc/kadc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/adc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/cm&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../config/twrk70f120m&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/dma&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/enet/macnet&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/enet/phy&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/enet&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/esdhc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/flashx/freescale&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/flashx&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/can/flexcan&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/gpio/kgpio&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/gpio&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/hmi&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/hmi/TSS/shared&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/hwtimer&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/i2c&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/i2c/polled&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/i2c/int&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/bsp/twrk70f120m&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../config/common&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/include&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/debug&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/io_mem&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/io_null&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pipe&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/lpm&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/lwadc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/lwgpio&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/nandflash/nfc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/nandflash&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pcb&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pcb/mqxa&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pccard&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pcflash&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/rtc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sai&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sai/int&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sdcard/sdcard_spi&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sdcard/sdcard_esdhc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sdcard&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/serial&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/spi&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/tchres&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/tfs&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/timer&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/usb&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m/compiler/gcc_arm&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m/cpu&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m/core/M4&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/tad&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mfs/source/include&quot;"></listOptionValue></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.target.other.8681640625" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.target.other" valueType="string" value=" -Xassembler --no-warn "></option></tool>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.352548074" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
+
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.140780212" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.6399536132" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" valueType="definedSymbols"><listOptionValue builtIn="false" value="&quot;_AEABI_LC_CTYPE=C&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;__VFPV4__=1&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;__STRICT_ANSI__=1&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;_DEBUG=1&quot;"></listOptionValue></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.8515014648" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" valueType="includePath"><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../source/include&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/adc/kadc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/adc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/cm&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../config/twrk70f120m&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/dma&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/enet/macnet&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/enet/phy&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/enet&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/esdhc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/flashx/freescale&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/flashx&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/can/flexcan&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/gpio/kgpio&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/gpio&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/hmi&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/hmi/TSS/shared&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/hwtimer&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/i2c&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/i2c/polled&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/i2c/int&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/bsp/twrk70f120m&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../config/common&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/include&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/debug&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/io_mem&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/io_null&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pipe&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/lpm&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/lwadc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/lwgpio&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/nandflash/nfc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/nandflash&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pcb&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pcb/mqxa&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pccard&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pcflash&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/rtc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sai&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sai/int&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sdcard/sdcard_spi&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sdcard/sdcard_esdhc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sdcard&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/serial&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/spi&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/tchres&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/tfs&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/timer&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/usb&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m/compiler/gcc_arm&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m/cpu&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m/core/M4&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/tad&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mfs/source/include&quot;"></listOptionValue></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.other.9129638671" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.other" valueType="string" value=" -fno-strict-aliasing   -Wno-switch   -Wno-unused-value   -Wno-unused-variable   -Wno-unused-but-set-variable   -Wno-pointer-to-int-cast   -Wno-unused-function   -Wno-unused-label   -Wno-char-subscripts   -Wno-int-to-pointer-cast "></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.5530395507" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" valueType="enumerated" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.gnu99"></option></tool>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.182795042" name="Cross ARM C++ Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler"/>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.1812564797" name="Cross ARM C Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker">
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.266450165" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
+
+							</tool>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.1549239014" name="Cross ARM C++ Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker">
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections.424731209" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections" value="true" valueType="boolean"/>
+
+							</tool>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver.1516433570" name="Cross ARM GNU Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver"><outputType id="cdt.managedbuild.tool.gnu.archiver.output3831481933" superClass="cdt.managedbuild.tool.gnu.archiver.output" outputPrefix=""></outputType></tool>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash.53359927" name="Cross ARM GNU Create Flash Image" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash"/>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting.2124459052" name="Cross ARM GNU Create Listing" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting">
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source.940545174" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source" value="true" valueType="boolean"/>
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders.1437846132" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders" value="true" valueType="boolean"/>
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle.127261714" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle" value="true" valueType="boolean"/>
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers.1120939060" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers" value="true" valueType="boolean"/>
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide.20719615" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide" value="true" valueType="boolean"/>
+
+							</tool>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize.601842247" name="Cross ARM GNU Print Size" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize">
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format.1219491603" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format"/>
+
+							</tool>
+
+						<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.4849853515" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit" valueType="enumerated" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.985412597" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi" valueType="enumerated" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.nowarn.9727783203" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.nowarn" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn.2887573242" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.conversion.7742309570" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.conversion" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.unitialized.7690429687" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.unitialized" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.floatequal.6766357421" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.floatequal" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.shadow.410461425" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.shadow" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.pointerarith.8966369628" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.pointerarith" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.badfunctioncast.3521423339" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.badfunctioncast" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.logicalop.8128051757" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.logicalop" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.agreggatereturn.7669982910" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.agreggatereturn" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.missingdeclaration.9422302246" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.missingdeclaration" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.toerrors.6640930175" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.toerrors" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.other.1734313964" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.other" valueType="string" value=" -gstrict-dwarf   -gstrict-dwarf "></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.nostdinc.8729553222" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.nostdinc" valueType="boolean" value="true"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.other.8195190429" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.other" valueType="string" value=" -Wno-missing-braces "></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.nostdinc.8854370117" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.nostdinc" valueType="boolean" value="false"></option></toolChain>
+
+					</folderInfo>
+
+				</configuration>
+
+			</storageModule>
+
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+
+		</cconfiguration>
+
+		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.lib.release.1709515315">
+
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.lib.release.1709515315" moduleId="org.eclipse.cdt.core.settings" name="Release">
+
+				<externalSettings>
+
+					<externalSetting>
+
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/lib"/>
+
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/lib/Release"/>
+
+						<entry flags="RESOLVED" kind="libraryFile" name="lib" srcPrefixMapping="" srcRootPath=""/>
+
+					</externalSetting>
+
+				</externalSettings>
+
+				<extensions>
+
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+
+				</extensions>
+
+			<macros><stringMacro name="MQX_ROOT_DIR" value="${ProjDirPath}/../../../.."></stringMacro></macros></storageModule>
+
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+
+				<configuration buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="${cross_rm} -rf" description="" id="ilg.gnuarmeclipse.managedbuild.cross.config.lib.release.1709515315" name="Release" parent="ilg.gnuarmeclipse.managedbuild.cross.config.lib.release" artifactExtension="a" artifactName="${ProjDirPath}/../../../../lib/twrk70f120m.kds/release/rtcs/rtcs" postbuildStep="${MQX_ROOT_DIR}/rtcs/build/bat/rtcs_twrk70f120m.sh ${MQX_ROOT_DIR} ${MQX_ROOT_DIR}/lib/twrk70f120m.kds/release/rtcs kds" prebuildStep="mkdir -p &quot;${ProjDirPath}/../../../../lib/twrk70f120m.kds/release/rtcs&quot;">
+
+					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.lib.release.1709515315." name="/" resourcePath="">
+
+						<toolChain id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.lib.release.1672757369" name="Cross ARM GCC" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.lib.release">
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.950361237" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" valueType="enumerated" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.size"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.813919689" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength" value="true" valueType="boolean"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar.197009471" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar" value="true" valueType="boolean"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections.1322192935" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections" valueType="boolean" value="true"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections.476902696" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections" valueType="boolean" value="true"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn.818752144" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn" valueType="boolean" value="true"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.1141584827" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.257271341" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format" value="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.dwarf2"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.1648898647" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name" value="GNU Tools for ARM Embedded Processors" valueType="string"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.1925054075" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.architecture" value="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm" valueType="enumerated"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family.1488583644" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family" valueType="enumerated" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.1938691806" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset" valueType="enumerated" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.110817792" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix" value="arm-none-eabi-" valueType="string"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.1002449960" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.c" value="gcc" valueType="string"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.4663123" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp" value="g++" valueType="string"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar.297972522" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar" value="ar" valueType="string"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.644107763" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.make" value="make" valueType="string"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.448012392" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm" value="rm" valueType="string"/>
+
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.893744273" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
+
+							<builder buildPath="${workspace_loc:/lib}/Release" id="ilg.gnuarmeclipse.managedbuild.cross.builder.1907251596" managedBuildOn="true" name="Gnu Make Builder.Release" superClass="org.eclipse.cdt.build.core.internal.builder"/>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.2136319723" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.163651307" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
+
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.822184547" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.5805969238" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" valueType="includePath"><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../source/include&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/adc/kadc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/adc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/cm&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../config/twrk70f120m&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/dma&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/enet/macnet&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/enet/phy&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/enet&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/esdhc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/flashx/freescale&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/flashx&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/can/flexcan&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/gpio/kgpio&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/gpio&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/hmi&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/hmi/TSS/shared&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/hwtimer&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/i2c&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/i2c/polled&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/i2c/int&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/bsp/twrk70f120m&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../config/common&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/include&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/debug&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/io_mem&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/io_null&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pipe&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/lpm&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/lwadc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/lwgpio&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/nandflash/nfc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/nandflash&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pcb&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pcb/mqxa&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pccard&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pcflash&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/rtc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sai&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sai/int&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sdcard/sdcard_spi&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sdcard/sdcard_esdhc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sdcard&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/serial&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/spi&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/tchres&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/tfs&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/timer&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/usb&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m/compiler/gcc_arm&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m/cpu&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m/core/M4&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/tad&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mfs/source/include&quot;"></listOptionValue></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.target.other.7849121093" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.target.other" valueType="string" value=" -Xassembler --no-warn "></option></tool>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1286371090" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
+
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1578617637" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
+
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.2951354980" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" valueType="definedSymbols"><listOptionValue builtIn="false" value="&quot;_AEABI_LC_CTYPE=C&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;__STRICT_ANSI__=1&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;__VFPV4__=1&quot;"></listOptionValue></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.9814453125" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" valueType="includePath"><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../source/include&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/adc/kadc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/adc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/cm&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../config/twrk70f120m&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/dma&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/enet/macnet&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/enet/phy&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/enet&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/esdhc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/flashx/freescale&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/flashx&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/can/flexcan&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/gpio/kgpio&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/gpio&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/hmi&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/hmi/TSS/shared&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/hwtimer&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/i2c&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/i2c/polled&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/i2c/int&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/bsp/twrk70f120m&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../config/common&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/include&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/debug&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/io_mem&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/io_null&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pipe&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/lpm&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/lwadc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/lwgpio&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/nandflash/nfc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/nandflash&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pcb&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pcb/mqxa&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pccard&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/pcflash&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/rtc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sai&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sai/int&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sdcard/sdcard_spi&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sdcard/sdcard_esdhc&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/sdcard&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/serial&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/spi&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/tchres&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/tfs&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/timer&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/io/usb&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m/compiler/gcc_arm&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m/cpu&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/psp/cortex_m/core/M4&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mqx/source/tad&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../mfs/source/include&quot;"></listOptionValue></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.other.9940185546" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.other" valueType="string" value=" -fno-strict-aliasing   -Wno-switch   -Wno-unused-value   -Wno-unused-variable   -Wno-unused-but-set-variable   -Wno-pointer-to-int-cast   -Wno-unused-function   -Wno-unused-label   -Wno-char-subscripts   -Wno-int-to-pointer-cast "></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.3076477050" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" valueType="enumerated" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.gnu99"></option></tool>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.1089219690" name="Cross ARM C++ Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler"/>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.944889576" name="Cross ARM C Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker">
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.1264454943" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
+
+							</tool>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.1246044617" name="Cross ARM C++ Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker">
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections.646707097" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections" value="true" valueType="boolean"/>
+
+							</tool>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver.1060386225" name="Cross ARM GNU Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver"><outputType id="cdt.managedbuild.tool.gnu.archiver.output3212585449" superClass="cdt.managedbuild.tool.gnu.archiver.output" outputPrefix=""></outputType></tool>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash.880934131" name="Cross ARM GNU Create Flash Image" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash"/>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting.2103620037" name="Cross ARM GNU Create Listing" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting">
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source.1743777664" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source" value="true" valueType="boolean"/>
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders.95355527" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders" value="true" valueType="boolean"/>
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle.1143447315" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle" value="true" valueType="boolean"/>
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers.1961205364" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers" value="true" valueType="boolean"/>
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide.944410533" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide" value="true" valueType="boolean"/>
+
+							</tool>
+
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize.1540881228" name="Cross ARM GNU Print Size" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize">
+
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format.1348937784" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format"/>
+
+							</tool>
+
+						<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.2329406738" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit" valueType="enumerated" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.5302124023" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi" valueType="enumerated" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.nowarn.5643005371" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.nowarn" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn.1154479980" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.conversion.7082824707" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.conversion" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.unitialized.714416503" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.unitialized" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.floatequal.4158020019" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.floatequal" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.shadow.45166015" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.shadow" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.pointerarith.1028137207" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.pointerarith" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.badfunctioncast.5246887207" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.badfunctioncast" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.logicalop.6787109375" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.logicalop" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.agreggatereturn.7481689453" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.agreggatereturn" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.missingdeclaration.736694335" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.missingdeclaration" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.toerrors.6104736328" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.toerrors" valueType="boolean" value="false"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.other.6158752441" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.other" valueType="string" value=" -gstrict-dwarf   -gstrict-dwarf "></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.nostdinc.1238708496" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.nostdinc" valueType="boolean" value="true"></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.other.8630676269" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.other" valueType="string" value=" -Wno-missing-braces "></option><option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.nostdinc.2056274414" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.nostdinc" valueType="boolean" value="false"></option></toolChain>
+
+					</folderInfo>
+
+				</configuration>
+
+			</storageModule>
+
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+
+		</cconfiguration>
+
+	</storageModule>
+
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+
+		<project id="lib.ilg.gnuarmeclipse.managedbuild.cross.target.lib.1094722371" name="Static Library" projectType="ilg.gnuarmeclipse.managedbuild.cross.target.lib"/>
+
+	</storageModule>
+
+	<storageModule moduleId="scannerConfiguration">
+
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.lib.release.1709515315;ilg.gnuarmeclipse.managedbuild.cross.config.lib.release.1709515315.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1286371090;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1578617637">
+
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+
+		</scannerConfigBuildInfo>
+
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.lib.debug.202482942;ilg.gnuarmeclipse.managedbuild.cross.config.lib.debug.202482942.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.352548074;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.140780212">
+
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+
+		</scannerConfigBuildInfo>
+
+	</storageModule>
+
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+
+</cproject>

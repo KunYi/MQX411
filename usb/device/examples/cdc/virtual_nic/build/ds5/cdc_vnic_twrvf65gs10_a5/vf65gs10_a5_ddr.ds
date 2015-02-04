@@ -1,0 +1,248 @@
+# reset to known state
+reset 
+pause 100
+
+# initialise ecc on ocram.  uncomment to perform ecc check.
+#memory set 0x3f000000++0x3ffff %quad 0xffffffff #sysram0
+#memory set 0x3f040000++0x3ffff %quad 0xffffffff #sysram1
+
+memory 0x40048220 0x400ae4d0 noverify
+
+# select pll as system clock
+memory set 0x4006b02c 0 0x78 # power up fxosc
+# wait ((data.long(0x4006b004))&0x20)==0x20 #wait for fxosc to lock
+pause 500ms
+memory set 0x4006b008 0 0x20 # set fxosc as fast clock
+
+# enable all clocks gates from ccm
+memory set 0x4006b040 0 0xffffffff
+memory set 0x4006b044 0 0xffffffff
+memory set 0x4006b048 0 0xffffffff
+memory set 0x4006b04c 0 0xffffffff
+memory set 0x4006b050 0 0xffffffff
+memory set 0x4006b054 0 0xffffffff
+memory set 0x4006b058 0 0xffffffff
+memory set 0x4006b05c 0 0xffffffff
+memory set 0x4006b060 0 0xffffffff
+memory set 0x4006b064 0 0xffffffff
+memory set 0x4006b068 0 0xffffffff
+memory set 0x4006b06c 0 0xffffffff
+
+memory set 0x40050270 0 0x2001 # pll1
+# wait ((data.long(0x40050270))&0x80000000)==0x80000000 #wait for lock
+pause 500ms
+memory set 0x40050030 0 0x2001 # pll2
+# wait ((data.long(40050030))&0x80000000)==0x80000000 #wait for lock
+pause 500ms
+memory set 0x40050010 0 0x3040  # pll3
+# wait ((data.long(40050010))&0x80000000)==0x80000000 #wait for lock
+pause 500ms
+
+memory set 0x40050070 0 0x00002031  # anadig_pll_audio_ctrl: pll4
+pause 500ms
+memory set 0x400500e0 0 0x00002001  # anadig_pll_enet_ctrl: pll5
+pause 500ms
+memory set 0x400500a0 0 0x00002028  # anadig_pll_video_ctrl: pll6
+pause 500ms
+# wait ((data.long(0x400502c0))&0xff)==0x7c #wait for lock
+
+
+# enable all pfds sources and set sysclk as pll1 pfd3 for 396mhz
+
+memory set 0x4006b000 0 0x00010005 # ccm_ccr: firc_en=1 and oscnt=5
+memory set 0x4006b008 0 0x0003ff24 # ccm_ccsr: pll1 uses pll1_pfd3, enable all pll1 and pll2, select fast clock, and sys_clock_sel use pll1
+memory set 0x4006b00c 0 0x00000850 # ccm_cacrr: arm_div=0 (div by 1), bus_div=2 (div by 3), ipg_div value is 1 (div by 2), pll4 value is 1 (div 4)
+
+
+#########################################################################
+### ddr_iomuxvoid
+#########################################################################
+memory set 0x4004821c 0 0x00000140
+memory set 0x40048220 0 0x00000140
+memory set 0x40048224 0 0x00000140
+memory set 0x40048228 0 0x00000140
+memory set 0x4004822c 0 0x00000140
+memory set 0x40048230 0 0x00000140
+memory set 0x40048234 0 0x00000140
+memory set 0x40048238 0 0x00000140
+memory set 0x4004823c 0 0x00000140
+memory set 0x40048240 0 0x00000140
+memory set 0x40048244 0 0x00000140
+memory set 0x40048248 0 0x00000140
+memory set 0x4004824c 0 0x00000140
+memory set 0x40048250 0 0x00000140
+memory set 0x40048254 0 0x00000140
+memory set 0x40048258 0 0x00000140
+memory set 0x4004825c 0 0x00000140
+memory set 0x40048260 0 0x00000140
+memory set 0x40048264 0 0x00000140
+memory set 0x40048268 0 0x00000140
+memory set 0x4004826c 0 0x00000140
+memory set 0x40048270 0 0x00000140
+memory set 0x40048274 0 0x00010140
+memory set 0x40048278 0 0x00000140
+memory set 0x4004827c 0 0x00000140
+memory set 0x40048280 0 0x00000140
+memory set 0x40048284 0 0x00000140
+memory set 0x40048288 0 0x00000140
+memory set 0x4004828c 0 0x00000140
+memory set 0x40048290 0 0x00000140
+memory set 0x40048294 0 0x00000140
+memory set 0x40048298 0 0x00000140
+memory set 0x4004829c 0 0x00000140
+memory set 0x400482a0 0 0x00000140
+memory set 0x400482a4 0 0x00000140
+memory set 0x400482a8 0 0x00000140
+memory set 0x400482ac 0 0x00000140
+memory set 0x400482b0 0 0x00000140
+memory set 0x400482b4 0 0x00000140
+memory set 0x400482b8 0 0x00000140
+memory set 0x400482bc 0 0x00000140
+memory set 0x400482c0 0 0x00000140
+memory set 0x400482c4 0 0x00010140
+memory set 0x400482c8 0 0x00010140
+memory set 0x400482cc 0 0x00000140
+memory set 0x400482d0 0 0x00000140
+memory set 0x400482d4 0 0x00000140
+memory set 0x400482d8 0 0x00000140
+memory set 0x400482dc 0 0x00000140
+memory set 0x400482e0 0 0x00000140
+#########################################################################
+
+
+
+
+#########################################################################
+### ddr_init2
+#########################################################################
+memory set 0x400ae000 0 0x00000600
+memory set 0x400ae008 0 0x00000020
+memory set 0x400ae028 0 0x0000007c
+memory set 0x400ae02c 0 0x00013880
+memory set 0x400ae030 0 0x0000050c
+memory set 0x400ae034 0 0x15040404
+memory set 0x400ae038 0 0x1406040f
+memory set 0x400ae040 0 0x04040000
+memory set 0x400ae044 0 0x006db00c
+memory set 0x400ae048 0 0x00000403
+memory set 0x400ae050 0 0x01000403
+memory set 0x400ae054 0 0x06060101
+memory set 0x400ae058 0 0x000b0000
+memory set 0x400ae05c 0 0x03000200
+memory set 0x400ae060 0 0x00000006
+memory set 0x400ae064 0 0x00010000
+memory set 0x400ae068 0 0x0c28002c
+memory set 0x400ae070 0 0x00000005
+memory set 0x400ae074 0 0x00000003
+memory set 0x400ae078 0 0x0000000a
+memory set 0x400ae07c 0 0x00440200
+memory set 0x400ae084 0 0x00010000
+memory set 0x400ae088 0 0x00050500
+memory set 0x400ae098 0 0x00000100
+memory set 0x400ae09c 0 0x04001002
+memory set 0x400ae0a4 0 0x00000001
+memory set 0x400ae0b4 0 0x00000000
+memory set 0x400ae0b8 0 0x00000000
+memory set 0x400ae0bc 0 0x00000000
+memory set 0x400ae0c0 0 0x00460420
+memory set 0x400ae0c4 0 0x00000000
+memory set 0x400ae0cc 0 0x00000000
+memory set 0x400ae0d0 0 0x00000000
+memory set 0x400ae0e4 0 0x00000000
+memory set 0x400ae0e8 0 0x00000000
+memory set 0x400ae108 0 0x01000200
+memory set 0x400ae10c 0 0x02000040
+memory set 0x400ae114 0 0x00000200
+memory set 0x400ae118 0 0x00000040
+memory set 0x400ae11c 0 0x00000000
+memory set 0x400ae120 0 0x01000000
+memory set 0x400ae124 0 0x0a010300
+memory set 0x400ae128 0 0x0101ffff
+memory set 0x400ae12c 0 0x01010101
+memory set 0x400ae130 0 0x03030101
+memory set 0x400ae134 0 0x01000101
+memory set 0x400ae138 0 0x0000000c
+memory set 0x400ae13c 0 0x01000000
+memory set 0x400ae15c 0 0x01010000
+memory set 0x400ae160 0 0x00040000
+memory set 0x400ae164 0 0x00000002
+memory set 0x400ae16c 0 0x00020000
+memory set 0x400ae170 0 0x00000000
+memory set 0x400ae180 0 0x00002819
+memory set 0x400ae1a4 0 0x00202000
+memory set 0x400ae1a8 0 0x20200000
+memory set 0x400ae1b8 0 0x00002020
+memory set 0x400ae1c8 0 0x00202000
+memory set 0x400ae1cc 0 0x20200000
+memory set 0x400ae1d4 0 0x00000101
+memory set 0x400ae1d8 0 0x01010000
+memory set 0x400ae1dc 0 0x00000000
+memory set 0x400ae1e0 0 0x02020000
+memory set 0x400ae1e4 0 0x00000202
+memory set 0x400ae1e8 0 0x01010064
+memory set 0x400ae1ec 0 0x00010101
+memory set 0x400ae1f0 0 0x00000064
+memory set 0x400ae1f4 0 0x00000000
+memory set 0x400ae1f8 0 0x00000b00
+memory set 0x400ae1fc 0 0x00000000
+memory set 0x400ae20c 0 0x00000000
+memory set 0x400ae210 0 0x00000506
+memory set 0x400ae224 0 0x00020000
+memory set 0x400ae22c 0 0x04070303
+memory set 0x400ae220 0 0x00000000
+memory set 0x400ae268 0 0x68200000
+memory set 0x400ae26c 0 0x00000202
+memory set 0x400ae278 0 0x00000006
+memory set 0x400ae27c 0 0x00000006
+#########################################################################
+
+
+
+
+#########################################################################
+### ddr_phy_init2
+#########################################################################
+memory set 0x400ae400 0 0x00002613
+memory set 0x400ae440 0 0x00002613
+memory set 0x400ae480 0 0x00002613
+memory set 0x400ae4c0 0 0x00002613
+
+memory set 0x400ae404 0 0x00002615
+memory set 0x400ae444 0 0x00002615
+memory set 0x400ae484 0 0x00002615
+memory set 0x400ae4c4 0 0x00002615
+
+memory set 0x400ae408 0 0x01210080
+memory set 0x400ae448 0 0x01210080
+memory set 0x400ae488 0 0x01210080
+memory set 0x400ae4c8 0 0x01210080
+
+memory set 0x400ae40c 0 0x0001012a
+memory set 0x400ae44c 0 0x0001012a
+memory set 0x400ae48c 0 0x0001012a
+memory set 0x400ae4cc 0 0x0001012a
+
+memory set 0x400ae410 0 0x00012020
+memory set 0x400ae450 0 0x00012020
+memory set 0x400ae490 0 0x00012020
+memory set 0x400ae4d0 0 0x00012020
+
+memory set 0x400ae4c8 0 0x00001100
+#########################################################################
+
+
+
+
+#########################################################################
+### ddr_init2 end
+#########################################################################
+
+memory set 0x400ae148 0 0x1fffffff
+memory set 0x400ae000 0 0x00000601
+
+pause 100ms
+#########################################################################
+
+
+
+

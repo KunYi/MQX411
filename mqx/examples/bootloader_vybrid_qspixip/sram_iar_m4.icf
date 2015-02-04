@@ -1,0 +1,68 @@
+/*###ICF### Section handled by ICF editor, don't touch! ****/
+/*-Editor annotation file-*/
+/* IcfEditorFile="$TOOLKIT_DIR$\config\ide\IcfEditor\cortex_v1_0.xml" */
+/*-Specials-*/
+define symbol __ICFEDIT_intvec_start__ = 0x20000800;
+/*-Memory Regions-*/
+define symbol __ICFEDIT_region_ROM_start__      = 0x20000800;
+define symbol __ICFEDIT_region_ROM_end__        = 0x2002fff0;
+define symbol __ICFEDIT_region_RAM_start__      = 0x3f800000;
+define symbol __ICFEDIT_region_RAM_end__        = 0x3f807ff0;
+define symbol __ICFEDIT_region_RESERVED_start__ = 0x3f07ebf0;
+define symbol __ICFEDIT_region_RESERVED_end__   = 0x3f07eff0;
+
+/*-Sizes-*/
+define symbol __ICFEDIT_size_cstack__ = 0x400;
+define symbol __ICFEDIT_size_heap__   = 0x200;
+/**** End of ICF editor section. ###ICF###*/
+define symbol CONF_OFFSET       = 0x20000000;
+define symbol IVT_OFFSET        = 0x20000400;
+define symbol BOOT_DATA_OFFSET  = 0x20000420;
+define symbol DCD_OFFSET        = 0x20000430;
+
+define exported symbol __VECTOR_TABLE_ROM_START = 0x20000800;
+define exported symbol __VECTOR_TABLE_RAM_START = __ICFEDIT_region_RAM_start__;
+
+define exported symbol __DEFAULT_PROCESSOR_NUMBER       = 1;
+define exported symbol __DEFAULT_INTERRUPT_STACK_SIZE   = 0x400; //1024;
+define exported symbol __SHARED_RAM_START               = 0x3f040000;
+define exported symbol __SHARED_RAM_END                 = 0x3f04fff0;
+define exported symbol __SRAM_POOL_START                = __ICFEDIT_region_RAM_start__;
+define exported symbol __SRAM_POOL_END                  = __ICFEDIT_region_RAM_end__;
+define exported symbol __UNCACHED_DATA_START            = __ICFEDIT_region_RAM_start__;
+define exported symbol __UNCACHED_DATA_END              = __ICFEDIT_region_RAM_end__;
+
+/* mem_init writes a storeblock_struct at the end of kernel data, max size 32 bytes, so use 0x100 offset */
+define exported symbol __BOOT_STACK_ADDRESS = __ICFEDIT_region_RAM_end__ - 0x100;
+
+define exported symbol __KERNEL_DATA_END = __ICFEDIT_region_RAM_end__;
+
+define memory mem with size = 4G;
+define region ROM_region   = mem:[from __ICFEDIT_region_ROM_start__   to __ICFEDIT_region_ROM_end__];
+define region RAM_region   = mem:[from __ICFEDIT_region_RAM_start__   to __ICFEDIT_region_RAM_end__];
+define region RESERVED_region   = mem:[from __ICFEDIT_region_RESERVED_start__   to __ICFEDIT_region_RESERVED_end__];
+
+define block KERNEL_DATA with alignment = 8 { section .kernel_data };
+
+define block USER_RW_MEMORY with alignment = 32 { section .rwuser };
+define block USER_RO_MEMORY with alignment = 32 { section .rouser };
+define block USER_NO_MEMORY with alignment = 32 { section .nouser };
+
+define block USER_DEFAULT_MEMORY with alignment = 32 { readwrite };
+
+initialize by copy { readwrite, section .boot_reserved_data, section .boot_reserved_code };
+do not initialize  { section .noinit };
+do not initialize  { section .kernel_data };
+place at address mem:CONF_OFFSET { section .conf };
+place at address mem:IVT_OFFSET { section .ivt };
+place at address mem:BOOT_DATA_OFFSET { readonly section .boot_data };
+place at address mem:DCD_OFFSET { readonly section .dcd };
+
+keep{section .conf, section .ivt, section .boot_data, section .dcd};
+
+place in ROM_region   { first block head { readonly section .intvec }, readonly };
+place at address mem:__ICFEDIT_region_RAM_start__ { readwrite section .vectors_ram };
+
+/* each block/segment must be in one line (association to region) because I need kernel data start after other datas */
+place in RAM_region   { block USER_NO_MEMORY, block USER_RO_MEMORY, block USER_RW_MEMORY, block USER_DEFAULT_MEMORY, last block KERNEL_DATA };
+place in RESERVED_region    { section .boot_reserved_data, section .boot_reserved_code };

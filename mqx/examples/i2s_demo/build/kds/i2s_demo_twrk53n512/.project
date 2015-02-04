@@ -1,0 +1,49 @@
+<?xml version="1.0"?><projectDescription>
+
+	<name>i2s_demo_twrk53n512</name>
+
+	<comment></comment>
+
+	<projects>
+
+	</projects>
+
+	<buildSpec>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+
+			<triggers>clean,full,incremental,</triggers>
+
+			<arguments>
+
+			</arguments>
+
+		</buildCommand>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+
+			<triggers>full,incremental,</triggers>
+
+			<arguments>
+
+			</arguments>
+
+		</buildCommand>
+
+	</buildSpec>
+
+	<natures>
+
+		<nature>org.eclipse.cdt.core.cnature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+
+	</natures>
+
+<linkedResources><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/log_messages.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/log_messages.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/log_messages.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/log_messages.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/main.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/main.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/main.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/main.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/sgtl5000.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/sgtl5000.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/sgtl5000.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/sgtl5000.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/sh_audio.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/sh_audio.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/sh_audio.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/sh_audio.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/wav.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/wav.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/wav.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/wav.h</locationURI></link></linkedResources><variableList><variable><name>MQX_ROOT_DIR</name><value>${PROJECT_LOC}/../../../../../..</value></variable></variableList></projectDescription>

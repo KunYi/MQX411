@@ -1,0 +1,202 @@
+
+
+.header{
+	background-color: #ffffff;
+	vertical-align: top; 
+	text-align: right; 
+	padding-right: 5px;	
+	
+}
+.headerText{
+	text-align: right;
+}
+
+
+.padMe5 {
+	display: block;
+	text-align: right;
+	font-weight: bold;
+	margin: 0px;
+	padding: 5px 0px 0px 0px;
+}
+
+.Hdr {
+	font-weight: bold;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #FFF;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 75%;
+	font-weight: normal;
+	color: #51626F;
+}
+
+a{
+	color: #017bba;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #017bba;
+	text-decoration: underline;
+}
+
+h1 {
+	line-height: 28px;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	text-indent: 0px;
+}
+
+#mncnt {
+	padding: 0px 0px 0px 12px;
+}
+
+.cframe{
+	margin: 0px 0px 0px 160px;
+}
+
+
+
+/* Begin Left Nav CSS  */
+
+#lfnvcl {
+	float: left;
+	width: 161px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#lnv h1, #lnv h2, #lnv h3, #lnv h4, #lnv h5, #lnv h6 {
+	font-size: 1em;
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+}
+
+#lnv, #lnv ul { /* all left nav lists */
+	padding: 0px 0px 1px 1px;
+	margin: 0px;
+	list-style: none;
+	float : left;
+	width : 157px;
+	display: block;
+	/* Commented by rvi01z for CCT57479 on 13 May 2008 start
+	background-color: #FFF;
+	Commented rvi01z for CCT57479 on 13 May 2008 End */
+	font-size: .9em;
+	/* Commented by rvi01z for CCT57479 on 13 May 2008 start
+	border: 1px solid #C4CFD1;
+	Commented rvi01z for CCT57479 on 13 May 2008 End */
+}
+
+#lnv a {
+	color: #51626F;
+	text-decoration: none;
+}
+
+#lnv a:hover {
+	color: #51626F;
+	text-decoration: underline;
+}
+
+#lnv .pt {
+	background-color: #C4CFD1;
+}
+
+#lnv .ar {
+/*	background: url(arrow.gif) center right no-repeat;*/
+	background-color: #E0E6E6;
+}
+
+
+
+#lnv li { /* all list items */
+	position : relative;
+	float : left;
+	line-height : 16px;
+	margin: 0px;
+	padding: 0px;
+	width: 157px;
+	background-color: #FFF;
+	z-index: 50;
+}
+	
+#lnv li ul { /* second-level lists */
+	position : absolute;
+	left: -999em;
+	margin-left : 157px;
+	margin-top : -24px;
+	font-size: 1em;
+}
+
+
+	
+#lnv li a {
+	width: 139px;
+	w\idth : 139px;
+	display : block;
+	font-weight : normal;
+	text-decoration : none;
+	background-color: #E0E6E6;
+	margin : 0px;
+	padding: 3px 12px 3px 5px;
+	border-top: 1px solid #FFF;
+}
+	
+#lnv li a:hover {
+	background-color : #C4CFD1;
+}
+	
+#lnv li:hover ul ul, #lnv li:hover ul ul ul, #lnv li.sfhover ul ul, #lnv li.sfhover ul ul ul {
+	left: -999em;
+	background-color: #FFF;
+}
+	
+#lnv li:hover ul, #lnv li li:hover ul, #lnv li li li:hover ul, #lnv li.sfhover ul, #lnv li li.sfhover ul, #lnv li li li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+	background-color: #FFF;
+}
+	
+#ftr{
+	position: relative;
+	float: left;
+	clear: both;
+	display: block;
+	padding: 0px;
+	margin: 0px 0px 10px 0px;
+	width: 988px;
+	height: 23px;
+	line-height: 23px;
+	border: 1px solid #C3CFD1;
+	font-size: .9em;
+	background-color: #FFF;
+	z-index: 1;
+}
+
+
+#ftr .copyright {
+	float: right;
+	padding-right: 5px;
+}
+
+
+
+
+div.hrw {
+/*  background: #fff url(hr1.gif) repeat-x scroll center;*/
+	margin: 0;
+	padding: 0;
+	height: 1px;
+}
+div.hrw hr {
+  display: none;
+	margin: 0;
+	padding: 0;
+}
+

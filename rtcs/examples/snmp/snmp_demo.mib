@@ -1,0 +1,47 @@
+    DEMO-MIB DEFINITIONS ::= BEGIN
+
+        DisplayString ::= OCTET STRING
+
+        your_company    OBJECT IDENTIFIER ::= { enterprises 33118 }
+
+        mqx_demo        OBJECT IDENTIFIER ::= { your_company 1 }
+
+        demo1           OBJECT IDENTIFIER ::= { mqx_demo 1 }
+
+        data            OBJECT IDENTIFIER ::= { demo1 1 }
+
+        hello_string OBJECT-TYPE
+                SYNTAX DisplayString
+                ACCESS read-only
+                STATUS mandatory
+                DESCRIPTION
+                        ""
+                ::= { data 1 }
+
+        counter OBJECT-TYPE
+                SYNTAX INTEGER
+                ACCESS read-only
+                STATUS mandatory
+                DESCRIPTION
+                        ""
+                ::= { data 2 }
+
+        alarm_limit OBJECT-TYPE
+                SYNTAX INTEGER
+                ACCESS read-write
+                STATUS mandatory
+                DESCRIPTION
+                        ""
+                ::= { data 3 }
+
+        traps           OBJECT IDENTIFIER ::= { demo1 2 }
+
+        trapmsg1 OBJECT-TYPE
+                SYNTAX DisplayString
+                ACCESS read-only
+                STATUS mandatory
+                DESCRIPTION
+                        ""
+                ::= { traps 1 }
+
+    END

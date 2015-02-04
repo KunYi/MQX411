@@ -1,0 +1,49 @@
+<?xml version="1.0"?><projectDescription>
+
+	<name>phdc_bridge_twrk70f120m</name>
+
+	<comment></comment>
+
+	<projects>
+
+	</projects>
+
+	<buildSpec>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+
+			<triggers>clean,full,incremental,</triggers>
+
+			<arguments>
+
+			</arguments>
+
+		</buildCommand>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+
+			<triggers>full,incremental,</triggers>
+
+			<arguments>
+
+			</arguments>
+
+		</buildCommand>
+
+	</buildSpec>
+
+	<natures>
+
+		<nature>org.eclipse.cdt.core.cnature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+
+	</natures>
+
+<linkedResources><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/bridge.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/bridge.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/bridge.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/bridge.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/ieee11073_nom_codes.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/ieee11073_nom_codes.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/ieee11073_phd_types.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/ieee11073_phd_types.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/phdc_server.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/phdc_server.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/phdc_server.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/phdc_server.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/usb_descriptor.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_descriptor.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/usb_descriptor.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_descriptor.h</locationURI></link></linkedResources><variableList><variable><name>MQX_ROOT_DIR</name><value>${PROJECT_LOC}/../../../../../../../..</value></variable></variableList></projectDescription>

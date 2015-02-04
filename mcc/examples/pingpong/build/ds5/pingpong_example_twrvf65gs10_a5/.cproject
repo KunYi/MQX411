@@ -1,0 +1,295 @@
+<?xml version="1.0" standalone="no"?><?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+
+		<cconfiguration id="com.arm.eclipse.build.config.baremetal.exe.debug.893051445">
+
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.arm.eclipse.build.config.baremetal.exe.debug.893051445" moduleId="org.eclipse.cdt.core.settings" name="DDR Debug">
+
+				<externalSettings/>
+
+				<extensions>
+
+					<extension id="com.arm.eclipse.builder.armcc.error" point="org.eclipse.cdt.core.ErrorParser"/>
+
+				</extensions>
+
+			<macros><stringMacro name="MQX_ROOT_DIR" value="${ProjDirPath}/../../../../../.."></stringMacro></macros></storageModule>
+
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+
+				<configuration buildArtefactType="com.arm.eclipse.build.artefact.baremetal.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=com.arm.eclipse.build.artefact.baremetal.exe" cleanCommand="clean" description="" id="com.arm.eclipse.build.config.baremetal.exe.debug.893051445" name="DDR Debug" parent="com.arm.eclipse.build.config.baremetal.exe.debug" artifactExtension="axf" artifactName="pingpong_example">
+
+					<folderInfo id="com.arm.eclipse.build.config.baremetal.exe.debug.893051445." name="/" resourcePath="">
+
+						<toolChain id="com.arm.toolchain.baremetal.exe.debug.1489350840" name="ARM Compiler" nonInternalBuilderId="com.arm.toolchain.baremetal.builder" superClass="com.arm.toolchain.baremetal.exe.debug">
+
+							<targetPlatform id="com.arm.eclipse.build.config.baremetal.exe.debug.893051445..694131562" name=""/>
+
+							<builder autoBuildTarget="all" buildPath="${workspace_loc:/app_twrvf65gs10_a5/DDR Debug}" cleanBuildTarget="clean" id="org.eclipse.cdt.build.core.internal.builder.531665376" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="org.eclipse.cdt.build.core.internal.builder"/>
+
+							<tool command="armcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="com.arm.tool.c.compiler.baremetal.exe.debug.1501911384" name="ARM C Compiler" superClass="com.arm.tool.c.compiler.baremetal.exe.debug">
+
+								<option id="com.arm.tool.c.compiler.option.incpath.308889573" name="Include path (-I)" superClass="com.arm.tool.c.compiler.option.incpath"><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../..&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug/bsp&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug/bsp/Generated_Code&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug/psp&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug/mcc&quot;"></listOptionValue></option>
+
+								<option id="com.arm.tool.c.compiler.option.defmac.365164935" name="Define macro (-D)" superClass="com.arm.tool.c.compiler.option.defmac"><listOptionValue builtIn="false" value="&quot;_DEBUG=1&quot;"></listOptionValue></option>
+
+								<option id="com.arm.tool.c.compiler.option.targetcpu.1667254443" name="Target CPU (--cpu)" superClass="com.arm.tool.c.compiler.option.targetcpu" valueType="string" value="Cortex-A5.neon"/>
+
+								<option id="com.arm.tool.c.compiler.option.targetfpu.41282086" name="Target FPU (--fpu)" superClass="com.arm.tool.c.compiler.option.targetfpu" valueType="string" value="vfpv4"/>
+
+								<option id="com.arm.tool.c.compiler.option.fpmode.1744126954" name="Floating-point mode (--fpmode)" superClass="com.arm.tool.c.compiler.option.fpmode" valueType="enumerated" value="com.arm.tool.c.compiler.option.fpmode.default"/>
+
+								<option id="com.arm.tool.c.compiler.option.fppcs.1112737610" name="Floating-point PCS (--apcs)" superClass="com.arm.tool.c.compiler.option.fppcs" valueType="enumerated" value="com.arm.tool.c.compiler.option.fppcs.auto"/>
+
+								<option id="com.arm.tool.c.compiler.option.flags.304562505" name="Other flags" superClass="com.arm.tool.c.compiler.option.flags" valueType="string" value=""/>
+
+								<option id="com.arm.tool.c.compiler.option.vector.1584116128" name="Vectorization (--vectorize)" superClass="com.arm.tool.c.compiler.option.vector" valueType="boolean" value="true"/>
+
+								<option id="com.arm.tool.c.compiler.option.inst.1977321786" name="Instruction set" superClass="com.arm.tool.c.compiler.option.inst" valueType="enumerated" value="com.arm.tool.c.compiler.option.inst.thumb"/>
+
+								<option id="com.arm.tool.c.compiler.option.inter.876404547" name="Interworking (--apcs=/interwork)" superClass="com.arm.tool.c.compiler.option.inter" valueType="boolean" value="true"/>
+
+								<inputType id="com.arm.tool.c.compiler.input.905747706" superClass="com.arm.tool.c.compiler.input"/>
+
+								<inputType id="com.arm.tool.cpp.compiler.input.1411695198" superClass="com.arm.tool.cpp.compiler.input"/>
+
+							<option id="com.arm.tool.c.compiler.option.suppress.1619873046" superClass="com.arm.tool.c.compiler.option.suppress" valueType="string" value="1296,186"></option><option id="com.arm.tool.c.compiler.option.exceptions.7249755859" superClass="com.arm.tool.c.compiler.option.exceptions" valueType="boolean" value="false"></option><option id="com.arm.tool.c.compiler.options.debug.enabled.4947204589" superClass="com.arm.tool.c.compiler.options.debug.enabled" valueType="boolean" value="true"></option><option id="com.arm.tool.c.compiler.options.debug.format.7610168457" superClass="com.arm.tool.c.compiler.options.debug.format" valueType="enumerated" value="com.arm.tool.c.compiler.options.debug.format.auto"></option><option id="com.arm.tool.c.compiler.option.endian.181884765" superClass="com.arm.tool.c.compiler.option.endian" valueType="enumerated" value="com.arm.tool.c.compiler.option.endian.auto"></option><option id="com.arm.tool.c.compiler.option.enum.2302551269" superClass="com.arm.tool.c.compiler.option.enum" valueType="boolean" value="false"></option><option id="com.arm.tool.c.compiler.option.gnu.6878051757" superClass="com.arm.tool.c.compiler.option.gnu" valueType="boolean" value="false"></option><option id="com.arm.tool.c.compile.option.lang.4006958007" superClass="com.arm.tool.c.compile.option.lang" valueType="enumerated" value="com.arm.tool.c.compile.option.lang.c99"></option><option id="com.arm.tool.c.compiler.option.strict.4053344726" superClass="com.arm.tool.c.compiler.option.strict" valueType="enumerated" value="com.arm.tool.c.compiler.option.strict.auto"></option><option id="com.arm.tool.c.compiler.baremetal.lib.debug.option.opt.2618713378" superClass="com.arm.tool.c.compiler.baremetal.lib.debug.option.opt" valueType="enumerated" value="com.arm.tool.c.compiler.option.optlevel.min"></option><option id="com.arm.tool.c.compiler.option.optfor.6799926757" superClass="com.arm.tool.c.compiler.option.optfor" valueType="enumerated" value="com.arm.tool.c.compiler.option.optfor.auto"></option><option id="com.arm.tool.c.compiler.option.enablerem.1651000976" superClass="com.arm.tool.c.compiler.option.enablerem" valueType="boolean" value="false"></option><option id="com.arm.tool.c.compiler.option.suppresswarn.8834838867" superClass="com.arm.tool.c.compiler.option.suppresswarn" valueType="boolean" value="false"></option><option id="com.arm.tool.c.compiler.option.warnaserr.5309448242" superClass="com.arm.tool.c.compiler.option.warnaserr" valueType="boolean" value="false"></option><option id="com.arm.tool.c.compiler.option.charsize.7094116210" superClass="com.arm.tool.c.compiler.option.charsize" valueType="enumerated" value="com.arm.tool.c.compiler.option.enum.auto"></option></tool>
+
+							<tool id="com.arm.tool.cpp.compiler.baremetal.exe.debug.1730103326" name="ARM C++ Compiler" superClass="com.arm.tool.cpp.compiler.baremetal.exe.debug">
+
+								<option id="com.arm.tool.c.compiler.option.flags.382455750" name="Other flags" superClass="com.arm.tool.c.compiler.option.flags" value="--c99 --split_sections" valueType="string"/>
+
+								<option id="com.arm.tool.c.compiler.option.targetfpu.1657106409" name="Target FPU (--fpu)" superClass="com.arm.tool.c.compiler.option.targetfpu" value="vfpv4" valueType="string"/>
+
+								<option id="com.arm.tool.c.compiler.option.vector.1095616591" name="Vectorization (--vectorize)" superClass="com.arm.tool.c.compiler.option.vector" value="true" valueType="boolean"/>
+
+								<option id="com.arm.tool.c.compiler.option.targetcpu.433649553" name="Target CPU (--cpu)" superClass="com.arm.tool.c.compiler.option.targetcpu" value="Cortex-A5.neon" valueType="string"/>
+
+							</tool>
+
+							<tool id="com.arm.tool.assembler.1595934606" name="ARM Assembler" superClass="com.arm.tool.assembler">
+
+								<option id="com.arm.tool.assembler.option.cpu.220910660" name="Target CPU (--cpu)" superClass="com.arm.tool.assembler.option.cpu" valueType="string" value="Cortex-A5.neon"/>
+
+								<option id="com.arm.tool.assembler.option.fpu.1867808677" name="Target FPU (--fpu)" superClass="com.arm.tool.assembler.option.fpu" valueType="string" value="vfpv4"/>
+
+								<option id="com.arm.tool.assembler.option.fpmode.1230363014" name="Floating-point mode (--fpmode)" superClass="com.arm.tool.assembler.option.fpmode" valueType="enumerated" value="com.arm.tool.c.compiler.option.fpmode.default"/>
+
+								<option id="com.arm.tool.assembler.option.fppcs.1885819695" name="Floating-point PCS (--apcs)" superClass="com.arm.tool.assembler.option.fppcs" valueType="enumerated" value="com.arm.tool.c.compiler.option.fppcs.auto"/>
+
+								<option id="com.arm.tool.assembler.option.flags.162666802" name="Other flags" superClass="com.arm.tool.assembler.option.flags" valueType="string" value="-I&quot;&quot;${ProjDirPath}/../../..&quot;&quot; -I&quot;&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug&quot;&quot; -I&quot;&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug/bsp&quot;&quot; -I&quot;&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug/bsp/Generated_Code&quot;&quot; -I&quot;&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug/psp&quot;&quot; -I&quot;&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug/mcc&quot;&quot;"/>
+
+								<option id="com.arm.tool.assembler.option.preproc.664063760" name="Preprocess input before assembling (--cpreproc)" superClass="com.arm.tool.assembler.option.preproc" valueType="boolean" value="true"/>
+
+								<option id="com.arm.tool.assembler.option.inter.695294122" name="Interworking (--apcs=/interwork)" superClass="com.arm.tool.assembler.option.inter" valueType="boolean" value="true"/>
+
+							<option id="com.arm.tool.assembler.option.preprocflags.2965393066" superClass="com.arm.tool.assembler.option.preprocflags" valueType="string" value="-D_DEBUG=1"></option><option id="com.arm.tool.assembler.option.debug.2942504882" superClass="com.arm.tool.assembler.option.debug" valueType="boolean" value="true"></option><option id="com.arm.tool.assembler.option.debug.format.7703552246" superClass="com.arm.tool.assembler.option.debug.format" valueType="enumerated" value="com.arm.tool.c.compiler.options.debug.format.auto"></option><option id="com.arm.tool.assembler.option.endian.4142456054" superClass="com.arm.tool.assembler.option.endian" valueType="enumerated" value="com.arm.tool.c.compiler.option.endian.auto"></option><option id="com.arm.tool.assembler.option.inst.3260192871" superClass="com.arm.tool.assembler.option.inst" valueType="enumerated" value="com.arm.tool.c.compiler.option.inst.auto"></option><option id="com.arm.tool.assembler.option.unalign.3803100585" superClass="com.arm.tool.assembler.option.unalign" valueType="boolean" value="false"></option><option id="com.arm.tool.assembler.option.sup.3893127441" superClass="com.arm.tool.assembler.option.sup" valueType="string" value="1608,1876"></option></tool>
+
+							<tool id="com.arm.tool.c.linker.2117563616" name="ARM Linker" superClass="com.arm.tool.c.linker">
+
+								<option id="com.arm.tool.c.linker.option.cpu.570321710" name="Target CPU (--cpu)" superClass="com.arm.tool.c.linker.option.cpu" valueType="string" value="Cortex-A5.neon"/>
+
+								<option id="com.arm.tool.c.linker.option.scatter.1564907077" name="Scatter file (--scatter)" superClass="com.arm.tool.c.linker.option.scatter" valueType="string" value="${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug/bsp/ddr.scf"/>
+
+								<option id="com.arm.tool.c.linker.option.libs.493644921" name="Libraries (--library)" superClass="com.arm.tool.c.linker.option.libs"/>
+
+								<option id="com.arm.tool.c.linker.option.libsearch.253483115" name="Library search path (--userlibpath)" superClass="com.arm.tool.c.linker.option.libsearch"/>
+
+								<option id="com.arm.tool.c.linker.option.flags.1364492238" name="Other flags" superClass="com.arm.tool.c.linker.option.flags" valueType="string" value=" --debug "/>
+
+								<option id="com.arm.tool.c.linker.libs.892931713" name="Other library files" superClass="com.arm.tool.c.linker.libs"><listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug/bsp/bsp.a"></listOptionValue><listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug/psp/psp.a"></listOptionValue><listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug/psp/psp.a(linker_symbols.o)"></listOptionValue><listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/debug/mcc/mcc.a"></listOptionValue></option>
+
+								<option id="com.arm.tool.c.linker.option.entry.1046384213" name="Image entry point (--entry)" superClass="com.arm.tool.c.linker.option.entry" valueType="string" value="__boot"/>
+
+								<option id="com.arm.tool.c.linker.option.imagemap.120208800" name="Generate image map (--map)" superClass="com.arm.tool.c.linker.option.imagemap" valueType="boolean" value="true"/>
+
+								<option id="com.arm.tool.c.linker.option.syslibs.948170745" name="Standard library search path (--libpath)" superClass="com.arm.tool.c.linker.option.syslibs"/>								
+
+								<option id="com.arm.tool.c.linker.option.keep.1039935686" name="Keep specific sections (--keep)" superClass="com.arm.tool.c.linker.option.keep" valueType="stringList"><listOptionValue builtIn="false" value="linker_symbols.o(KERNEL_DATA_START)"></listOptionValue><listOptionValue builtIn="false" value="linker_symbols.o(KERNEL_DATA_END)"></listOptionValue><listOptionValue builtIn="false" value="linker_symbols.o(BOOT_STACK)"></listOptionValue></option>	
+
+								<inputType id="com.arm.tool.c.linker.input.1014584033" superClass="com.arm.tool.c.linker.input">
+
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+
+								</inputType>
+
+							<option id="com.arm.tool.c.linker.option.fpu.7250061035" superClass="com.arm.tool.c.linker.option.fpu" valueType="string" value="vfpv4"></option><option id="com.arm.tool.c.linker.option.sizes.7845764160" superClass="com.arm.tool.c.linker.option.sizes" valueType="boolean" value="true"></option><option id="com.arm.tool.c.linker.option.totals.5090026855" superClass="com.arm.tool.c.linker.option.totals" valueType="boolean" value="true"></option><option id="com.arm.tool.c.linker.option.compress.4597473144" superClass="com.arm.tool.c.linker.option.compress" valueType="boolean" value="false"></option><option id="com.arm.tool.c.linker.option.stack.2349853515" superClass="com.arm.tool.c.linker.option.stack" valueType="boolean" value="false"></option><option id="com.arm.tool.c.linker.option.inlineinfo.5281982421" superClass="com.arm.tool.c.linker.option.inlineinfo" valueType="boolean" value="false"></option><option id="com.arm.tool.c.linker.option.elim.7873535156" superClass="com.arm.tool.c.linker.option.elim" valueType="boolean" value="true"></option><option id="com.arm.tool.c.link.option.suppress.1066894531" superClass="com.arm.tool.c.link.option.suppress" valueType="string" value="6314,6329"></option><option id="com.arm.tool.c.linker.option.redirectoutput.8189086914" superClass="com.arm.tool.c.linker.option.redirectoutput" valueType="string" value="mapfile.map"></option></tool>
+
+							<tool id="com.arm.tool.librarian.1738450557" name="ARM Librarian" superClass="com.arm.tool.librarian"/>
+
+						</toolChain>
+
+					</folderInfo>
+
+				</configuration>
+
+			</storageModule>
+
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+
+		</cconfiguration>
+
+		<cconfiguration id="com.arm.eclipse.build.config.baremetal.exe.debug.893051445.50365946">
+
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.arm.eclipse.build.config.baremetal.exe.debug.893051445.50365946" moduleId="org.eclipse.cdt.core.settings" name="DDR Release">
+
+				<externalSettings/>
+
+				<extensions>
+
+					<extension id="com.arm.eclipse.builder.armcc.error" point="org.eclipse.cdt.core.ErrorParser"/>
+
+				</extensions>
+
+			<macros><stringMacro name="MQX_ROOT_DIR" value="${ProjDirPath}/../../../../../.."></stringMacro></macros></storageModule>
+
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+
+				<configuration buildArtefactType="com.arm.eclipse.build.artefact.baremetal.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=com.arm.eclipse.build.artefact.baremetal.exe" cleanCommand="clean" description="" id="com.arm.eclipse.build.config.baremetal.exe.debug.893051445.50365946" name="DDR Release" parent="com.arm.eclipse.build.config.baremetal.exe.debug" artifactExtension="axf" artifactName="pingpong_example">
+
+					<folderInfo id="com.arm.eclipse.build.config.baremetal.exe.debug.893051445.50365946." name="/" resourcePath="">
+
+						<toolChain id="com.arm.toolchain.baremetal.exe.debug.1702365282" name="ARM Compiler" nonInternalBuilderId="com.arm.toolchain.baremetal.builder" superClass="com.arm.toolchain.baremetal.exe.debug">
+
+							<targetPlatform id="com.arm.toolchain.baremetal.exe.debug.1702365282.1422446213" name=""/>
+
+							<builder autoBuildTarget="all" buildPath="${workspace_loc:/app_twrvf65gs10_a5/DDR Release}" cleanBuildTarget="clean" id="org.eclipse.cdt.build.core.internal.builder.2125217274" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="org.eclipse.cdt.build.core.internal.builder"/>
+
+							<tool id="com.arm.tool.c.compiler.baremetal.exe.debug.227159324" name="ARM C Compiler" superClass="com.arm.tool.c.compiler.baremetal.exe.debug">
+
+								<option id="com.arm.tool.c.compiler.option.incpath.1841235030" name="Include path (-I)" superClass="com.arm.tool.c.compiler.option.incpath"><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../..&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release/bsp&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release/bsp/Generated_Code&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release/psp&quot;"></listOptionValue><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release/mcc&quot;"></listOptionValue></option>
+
+								<option id="com.arm.tool.c.compiler.option.defmac.1524592102" name="Define macro (-D)" superClass="com.arm.tool.c.compiler.option.defmac"/>
+
+								<option id="com.arm.tool.c.compiler.option.targetcpu.996866772" name="Target CPU (--cpu)" superClass="com.arm.tool.c.compiler.option.targetcpu" valueType="string" value="Cortex-A5.neon"/>
+
+								<option id="com.arm.tool.c.compiler.option.targetfpu.111389461" name="Target FPU (--fpu)" superClass="com.arm.tool.c.compiler.option.targetfpu" valueType="string" value="vfpv4"/>
+
+								<option id="com.arm.tool.c.compiler.option.fpmode.1972796957" name="Floating-point mode (--fpmode)" superClass="com.arm.tool.c.compiler.option.fpmode" valueType="enumerated" value="com.arm.tool.c.compiler.option.fpmode.default"/>
+
+								<option id="com.arm.tool.c.compiler.option.fppcs.1066220483" name="Floating-point PCS (--apcs)" superClass="com.arm.tool.c.compiler.option.fppcs" valueType="enumerated" value="com.arm.tool.c.compiler.option.fppcs.auto"/>
+
+								<option id="com.arm.tool.c.compiler.baremetal.exe.debug.option.opt.1321884607" name="Optimization level" superClass="com.arm.tool.c.compiler.baremetal.exe.debug.option.opt" value="com.arm.tool.c.compiler.option.optlevel.max" valueType="enumerated"/>
+
+								<option id="com.arm.tool.c.compiler.option.flags.1795168886" name="Other flags" superClass="com.arm.tool.c.compiler.option.flags" valueType="string" value=""/>
+
+								<option id="com.arm.tool.c.compiler.option.vector.1912555551" name="Vectorization (--vectorize)" superClass="com.arm.tool.c.compiler.option.vector" valueType="boolean" value="true"/>
+
+								<option id="com.arm.tool.c.compiler.option.inst.555220327" name="Instruction set" superClass="com.arm.tool.c.compiler.option.inst" valueType="enumerated" value="com.arm.tool.c.compiler.option.inst.thumb"/>
+
+								<option id="com.arm.tool.c.compiler.option.inter.2053039769" name="Interworking (--apcs=/interwork)" superClass="com.arm.tool.c.compiler.option.inter" valueType="boolean" value="true"/>
+
+								<inputType id="com.arm.tool.c.compiler.input.1969033978" superClass="com.arm.tool.c.compiler.input"/>
+
+								<inputType id="com.arm.tool.cpp.compiler.input.1489249755" superClass="com.arm.tool.cpp.compiler.input"/>
+
+							<option id="com.arm.tool.c.compiler.option.suppress.2901916503" superClass="com.arm.tool.c.compiler.option.suppress" valueType="string" value="1296,186"></option><option id="com.arm.tool.c.compiler.option.exceptions.8596496582" superClass="com.arm.tool.c.compiler.option.exceptions" valueType="boolean" value="false"></option><option id="com.arm.tool.c.compiler.options.debug.enabled.1756896972" superClass="com.arm.tool.c.compiler.options.debug.enabled" valueType="boolean" value="true"></option><option id="com.arm.tool.c.compiler.options.debug.format.7083129882" superClass="com.arm.tool.c.compiler.options.debug.format" valueType="enumerated" value="com.arm.tool.c.compiler.options.debug.format.auto"></option><option id="com.arm.tool.c.compiler.option.endian.4703369140" superClass="com.arm.tool.c.compiler.option.endian" valueType="enumerated" value="com.arm.tool.c.compiler.option.endian.auto"></option><option id="com.arm.tool.c.compiler.option.enum.1977539062" superClass="com.arm.tool.c.compiler.option.enum" valueType="boolean" value="false"></option><option id="com.arm.tool.c.compiler.option.gnu.1953125000" superClass="com.arm.tool.c.compiler.option.gnu" valueType="boolean" value="false"></option><option id="com.arm.tool.c.compile.option.lang.5026245117" superClass="com.arm.tool.c.compile.option.lang" valueType="enumerated" value="com.arm.tool.c.compile.option.lang.c99"></option><option id="com.arm.tool.c.compiler.option.strict.6628112792" superClass="com.arm.tool.c.compiler.option.strict" valueType="enumerated" value="com.arm.tool.c.compiler.option.strict.auto"></option><option id="com.arm.tool.c.compiler.baremetal.lib.debug.option.opt.4898681640" superClass="com.arm.tool.c.compiler.baremetal.lib.debug.option.opt" valueType="enumerated" value="com.arm.tool.c.compiler.option.optlevel.max"></option><option id="com.arm.tool.c.compiler.option.optfor.9231872558" superClass="com.arm.tool.c.compiler.option.optfor" valueType="enumerated" value="com.arm.tool.c.compiler.option.optfor.auto"></option><option id="com.arm.tool.c.compiler.option.enablerem.8677062988" superClass="com.arm.tool.c.compiler.option.enablerem" valueType="boolean" value="false"></option><option id="com.arm.tool.c.compiler.option.suppresswarn.8374938964" superClass="com.arm.tool.c.compiler.option.suppresswarn" valueType="boolean" value="false"></option><option id="com.arm.tool.c.compiler.option.warnaserr.4082336425" superClass="com.arm.tool.c.compiler.option.warnaserr" valueType="boolean" value="false"></option><option id="com.arm.tool.c.compiler.option.charsize.852355957" superClass="com.arm.tool.c.compiler.option.charsize" valueType="enumerated" value="com.arm.tool.c.compiler.option.enum.auto"></option></tool>
+
+							<tool id="com.arm.tool.cpp.compiler.baremetal.exe.debug.69112239" name="ARM C++ Compiler" superClass="com.arm.tool.cpp.compiler.baremetal.exe.debug">
+
+								<option id="com.arm.tool.c.compiler.option.flags.1047903537" name="Other flags" superClass="com.arm.tool.c.compiler.option.flags" value="--c99 --split_sections" valueType="string"/>
+
+								<option id="com.arm.tool.c.compiler.option.targetfpu.559110277" name="Target FPU (--fpu)" superClass="com.arm.tool.c.compiler.option.targetfpu" value="vfpv4" valueType="string"/>
+
+								<option id="com.arm.tool.c.compiler.option.vector.1259837230" name="Vectorization (--vectorize)" superClass="com.arm.tool.c.compiler.option.vector" value="true" valueType="boolean"/>
+
+								<option id="com.arm.tool.c.compiler.option.targetcpu.217881141" name="Target CPU (--cpu)" superClass="com.arm.tool.c.compiler.option.targetcpu" value="Cortex-A5.neon" valueType="string"/>
+
+							</tool>
+
+							<tool id="com.arm.tool.assembler.1869905304" name="ARM Assembler" superClass="com.arm.tool.assembler">
+
+								<option id="com.arm.tool.assembler.option.cpu.657209848" name="Target CPU (--cpu)" superClass="com.arm.tool.assembler.option.cpu" valueType="string" value="Cortex-A5.neon"/>
+
+								<option id="com.arm.tool.assembler.option.fpu.1472720434" name="Target FPU (--fpu)" superClass="com.arm.tool.assembler.option.fpu" valueType="string" value="vfpv4"/>
+
+								<option id="com.arm.tool.assembler.option.fpmode.968108547" name="Floating-point mode (--fpmode)" superClass="com.arm.tool.assembler.option.fpmode" valueType="enumerated" value="com.arm.tool.c.compiler.option.fpmode.default"/>
+
+								<option id="com.arm.tool.assembler.option.fppcs.1320558554" name="Floating-point PCS (--apcs)" superClass="com.arm.tool.assembler.option.fppcs" valueType="enumerated" value="com.arm.tool.c.compiler.option.fppcs.auto"/>
+
+								<option id="com.arm.tool.assembler.option.flags.1383970076" name="Other flags" superClass="com.arm.tool.assembler.option.flags" valueType="string" value="-I&quot;&quot;${ProjDirPath}/../../..&quot;&quot; -I&quot;&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release&quot;&quot; -I&quot;&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release/bsp&quot;&quot; -I&quot;&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release/bsp/Generated_Code&quot;&quot; -I&quot;&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release/psp&quot;&quot; -I&quot;&quot;${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release/mcc&quot;&quot;"/>
+
+								<option id="com.arm.tool.assembler.option.preproc.664063761" name="Preprocess input before assembling (--cpreproc)" superClass="com.arm.tool.assembler.option.preproc" valueType="boolean" value="true"/>
+
+								<option id="com.arm.tool.assembler.option.inter.1892104875" name="Interworking (--apcs=/interwork)" superClass="com.arm.tool.assembler.option.inter" valueType="boolean" value="true"/>
+
+							<option id="com.arm.tool.assembler.option.debug.6964721679" superClass="com.arm.tool.assembler.option.debug" valueType="boolean" value="true"></option><option id="com.arm.tool.assembler.option.debug.format.5851135253" superClass="com.arm.tool.assembler.option.debug.format" valueType="enumerated" value="com.arm.tool.c.compiler.options.debug.format.auto"></option><option id="com.arm.tool.assembler.option.endian.3932495117" superClass="com.arm.tool.assembler.option.endian" valueType="enumerated" value="com.arm.tool.c.compiler.option.endian.auto"></option><option id="com.arm.tool.assembler.option.inst.6575012207" superClass="com.arm.tool.assembler.option.inst" valueType="enumerated" value="com.arm.tool.c.compiler.option.inst.auto"></option><option id="com.arm.tool.assembler.option.unalign.9661865234" superClass="com.arm.tool.assembler.option.unalign" valueType="boolean" value="false"></option><option id="com.arm.tool.assembler.option.sup.7333068847" superClass="com.arm.tool.assembler.option.sup" valueType="string" value="1608,1876"></option></tool>
+
+							<tool id="com.arm.tool.c.linker.564204035" name="ARM Linker" superClass="com.arm.tool.c.linker">
+
+								<option id="com.arm.tool.c.linker.option.cpu.225984131" name="Target CPU (--cpu)" superClass="com.arm.tool.c.linker.option.cpu" valueType="string" value="Cortex-A5.neon"/>
+
+								<option id="com.arm.tool.c.linker.option.scatter.870802565" name="Scatter file (--scatter)" superClass="com.arm.tool.c.linker.option.scatter" valueType="string" value="${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release/bsp/ddr.scf"/>
+
+								<option id="com.arm.tool.c.linker.option.libs.1449285292" name="Libraries (--library)" superClass="com.arm.tool.c.linker.option.libs"/>
+
+								<option id="com.arm.tool.c.linker.option.libsearch.431218909" name="Library search path (--userlibpath)" superClass="com.arm.tool.c.linker.option.libsearch"/>
+
+								<option id="com.arm.tool.c.linker.option.flags.1404012036" name="Other flags" superClass="com.arm.tool.c.linker.option.flags" valueType="string" value=" --debug "/>
+
+								<option id="com.arm.tool.c.linker.libs.1177000380" name="Other library files" superClass="com.arm.tool.c.linker.libs"><listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release/bsp/bsp.a"></listOptionValue><listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release/psp/psp.a"></listOptionValue><listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release/psp/psp.a(linker_symbols.o)"></listOptionValue><listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../../lib/twrvf65gs10_a5.ds5/release/mcc/mcc.a"></listOptionValue></option>
+
+								<option id="com.arm.tool.c.linker.option.entry.991401805" name="Image entry point (--entry)" superClass="com.arm.tool.c.linker.option.entry" valueType="string" value="__boot"/>
+
+								<option id="com.arm.tool.c.linker.option.imagemap.1874098161" name="Generate image map (--map)" superClass="com.arm.tool.c.linker.option.imagemap" valueType="boolean" value="true"/>
+
+								<option id="com.arm.tool.c.linker.option.syslibs.948170746" name="Standard library search path (--libpath)" superClass="com.arm.tool.c.linker.option.syslibs"/>
+
+								<option id="com.arm.tool.c.linker.option.keep.1039935687" name="Keep specific sections (--keep)" superClass="com.arm.tool.c.linker.option.keep" valueType="stringList"><listOptionValue builtIn="false" value="linker_symbols.o(KERNEL_DATA_START)"></listOptionValue><listOptionValue builtIn="false" value="linker_symbols.o(KERNEL_DATA_END)"></listOptionValue><listOptionValue builtIn="false" value="linker_symbols.o(BOOT_STACK)"></listOptionValue></option>	
+
+								<inputType id="com.arm.tool.c.linker.input.28320245" superClass="com.arm.tool.c.linker.input">
+
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+
+								</inputType>
+
+							<option id="com.arm.tool.c.linker.option.fpu.8977966308" superClass="com.arm.tool.c.linker.option.fpu" valueType="string" value="vfpv4"></option><option id="com.arm.tool.c.linker.option.sizes.3956604003" superClass="com.arm.tool.c.linker.option.sizes" valueType="boolean" value="true"></option><option id="com.arm.tool.c.linker.option.totals.1966247558" superClass="com.arm.tool.c.linker.option.totals" valueType="boolean" value="true"></option><option id="com.arm.tool.c.linker.option.compress.1067199707" superClass="com.arm.tool.c.linker.option.compress" valueType="boolean" value="false"></option><option id="com.arm.tool.c.linker.option.stack.3469238281" superClass="com.arm.tool.c.linker.option.stack" valueType="boolean" value="false"></option><option id="com.arm.tool.c.linker.option.inlineinfo.4858703613" superClass="com.arm.tool.c.linker.option.inlineinfo" valueType="boolean" value="false"></option><option id="com.arm.tool.c.linker.option.elim.6774902343" superClass="com.arm.tool.c.linker.option.elim" valueType="boolean" value="true"></option><option id="com.arm.tool.c.link.option.suppress.2163696289" superClass="com.arm.tool.c.link.option.suppress" valueType="string" value="6314,6329"></option><option id="com.arm.tool.c.linker.option.redirectoutput.9415588378" superClass="com.arm.tool.c.linker.option.redirectoutput" valueType="string" value="mapfile.map"></option></tool>
+
+							<tool id="com.arm.tool.librarian.100244499" name="ARM Librarian" superClass="com.arm.tool.librarian"/>
+
+						</toolChain>
+
+					</folderInfo>
+
+				</configuration>
+
+			</storageModule>
+
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+
+		</cconfiguration>
+
+		
+
+		
+
+	</storageModule>
+
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+
+		<project id="com.arm.eclipse.build.project.baremetal.exe.1023008919" name="Bare-metal Executable" projectType="com.arm.eclipse.build.project.baremetal.exe"/>
+
+	</storageModule>
+
+	<storageModule moduleId="scannerConfiguration">
+
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+
+		<scannerConfigBuildInfo instanceId="com.arm.eclipse.build.config.baremetal.exe.debug.893051445;com.arm.eclipse.build.config.baremetal.exe.debug.893051445.;com.arm.tool.c.compiler.baremetal.exe.debug.1501911384;com.arm.tool.c.compiler.input.905747706">
+
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arm.eclipse.builder.armcc.ARMCompilerDiscoveryProfile"/>
+
+		</scannerConfigBuildInfo>
+
+	</storageModule>
+
+	<storageModule moduleId="refreshScope"/>
+
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+
+</cproject>

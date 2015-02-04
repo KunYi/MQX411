@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gui>
+	<!-- All paths are relative to MQX's installation directory-->
+	<includes>
+		<include>
+			<path>mqx\source\include\mqx_cnfg.h</path>
+			<tabname>MQX</tabname>
+		</include>
+		<include>
+			<path>rtcs\source\include\rtcscfg.h</path>
+			<tabname>RTCS</tabname>
+		</include>
+		<include>
+			<path>mfs\source\include\mfs_cnfg.h</path>
+			<tabname>MFS</tabname>
+		</include>
+		<include>
+			<path>shell\source\include\shell.h</path>
+			<tabname>Shell</tabname>
+		</include>
+		<!-- You can add here more <include> paths -->
+	</includes>
+	<additionalheaders>
+		<!-- All search paths are given as relative to user_config.h -->
+		<searchpath>..\common</searchpath>
+	</additionalheaders>
+	<colors>
+		<userconfighighlight R="34" G="139" B="34"/>
+		<includehighlight R="0" G="0" B="0"/>
+		<masterheaderhighlight R="0" G="0" B="0"/>
+	</colors>
+</gui>

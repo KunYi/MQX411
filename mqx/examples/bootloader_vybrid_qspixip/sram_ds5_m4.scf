@@ -1,0 +1,119 @@
+#! armcc -E --cpu Cortex-M4
+
+; NOTE: do not use memory over 0x3f07_0000 for ROM data
+#define CODE_BASE_ADDR_START        0x20000800
+#define CODE_BASE_ADDR_END          0x2002fff0
+#define CODE_SIZE                   (CODE_BASE_ADDR_END - CODE_BASE_ADDR_START)
+
+#define DATA_BASE_ADDR_START        0x3f800000
+#define DATA_BASE_ADDR_END          0x3f807ff0
+#define DATA_SIZE                   (DATA_BASE_ADDR_END - DATA_BASE_ADDR_START)
+
+#define DATA_SHARED_START           0x3f040000
+#define DATA_SHARED_END             0x3f04fff0
+
+#define RESERVED_BASE_ADDR_START    0x3f07ebf0
+#define RESERVED_BASE_ADDR_END      0x3f07eff0
+#define RESERVED_SIZE               (RESERVED_BASE_ADDR_END - RESERVED_BASE_ADDR_START)
+
+
+QUAD_SPI_CONFIG 0x20000000
+{ 
+   CONF +0 0x400
+  {
+  
+    *(.conf)
+  }
+}
+
+BOOT_IVT_HEADER_OFFSET 0x20000400
+{
+	IVT +0  0x20
+	{
+		*(.ivt)		
+	}
+	
+	BOOT_DATA +0 0x10
+	{
+		*(.boot_data)
+	}
+	
+	DCD +0
+	{
+		*(.dcd)
+	}
+}
+
+LOAD_REGION_CODE CODE_BASE_ADDR_START
+{
+    VECTORS CODE_BASE_ADDR_START
+    {
+        vectors.o (.vectors_rom,+FIRST)
+		vectors.o (.cfmconfig)
+    }
+    
+    CODE +0
+    {
+        * (InRoot$$Sections)      ; All library sections for example, __main.o,
+                                  ; __scatter*.o, __dc*.o, and * Region$$Table
+        * (KERNEL)
+        * (TEXT)
+        * (+RO)
+    }
+	
+    RAM_VECTORS DATA_BASE_ADDR_START ; For ram vector table. Used when  MQX_ROM_VECTORS is set to zero.
+    {
+        vectors.o (.vectors_ram)
+    }
+	
+    DATA +0 ALIGN 32 
+    {
+        * (+RW, +ZI)
+    }
+
+    KERNEL_DATA_START +0 ALIGN 16
+    {
+        * (KERNEL_DATA_START)     ; start of kernel data
+        * (SRAM_POOL_START)
+        * (UNCACHED_DATA_START)
+    }
+
+    KERNEL_DATA_END DATA_BASE_ADDR_END - (0x03*0x10)      ; RAM_END - 3 x aligned value with align 0x04 
+    {
+        * (SRAM_POOL_END)
+        * (UNCACHED_DATA_END)
+        * (KERNEL_DATA_END)     ; end of kernel data
+    }
+ 
+    SHARED_RAM_START DATA_SHARED_START EMPTY 0xfff0
+    {
+    }
+
+    SHARED_RAM_END DATA_SHARED_END
+    {
+        *(SHARED_RAM_END)
+    }
+    
+    ; mem_init writes a storeblock_struct at the end of kernel data,
+    ; max size 32 bytes, so use 0x100 offset
+   
+
+    BOOT_STACK_ADDR (DATA_BASE_ADDR_END - 0x100) OVERLAY
+    {
+        *(BOOT_STACK)
+    }
+
+    ; We don't use their stack or heap, but the tools expect this
+    ; to be here, so we have a dummy placeholder.
+    ARM_LIB_STACKHEAP (DATA_BASE_ADDR_END - 0x100) OVERLAY EMPTY UNINIT 0x04 
+    { }
+    
+    
+    RESERVED RESERVED_BASE_ADDR_START ALIGN 16
+    {
+        * (.boot_reserved_data)
+        * (.boot_reserved_code)
+    }
+}
+
+

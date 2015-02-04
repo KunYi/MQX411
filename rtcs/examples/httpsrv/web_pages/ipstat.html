@@ -1,0 +1,197 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+<head>
+<title>Freescale MQX Webserver</title>
+<style type="text/css">
+<!--
+@import"mqx.css";
+-->
+
+</style>
+
+<script src="request.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+if (window.attachEvent) {
+	window.attachEvent("onload", sfHover2);
+}
+</script>
+
+<script type="text/javascript">
+var 	stat_value 	= new Array(19);
+var	data_received   = 0;
+
+function parse_vars(data) {
+	var parsed = data.split("\n");
+
+	stat_value[0] 		= parsed[0];
+	stat_value[1] 		= parsed[1];
+	stat_value[2] 		= parsed[2];
+	stat_value[3] 		= parsed[3];
+	stat_value[4] 		= parsed[4];
+	stat_value[5] 		= parsed[5];
+	stat_value[6] 		= parsed[6];
+	stat_value[7] 		= parsed[7];
+	stat_value[8] 		= parsed[8];
+	stat_value[9] 		= parsed[9];
+	stat_value[10] 		= parsed[10];
+	stat_value[11] 		= parsed[11];
+	stat_value[12] 		= parsed[12];
+	stat_value[13] 		= parsed[13];
+	stat_value[14] 		= parsed[14];
+	stat_value[15] 		= parsed[15];
+	stat_value[16] 		= parsed[16];
+	stat_value[17] 		= parsed[17];
+	stat_value[18] 		= parsed[18];
+
+	rx_total.innerHTML 	=   "<h1>"+stat_value[0]+"</h1>";
+	rx_delivered.innerHTML 	= "<h1>"+stat_value[1]+"</h1>";
+	rx_forwarded.innerHTML 	= "<h1>"+stat_value[2]+"</h1>";
+	rx_missed.innerHTML 	=   "<h1>"+stat_value[3]+"</h1>";
+	rx_errors.innerHTML 	= "<h1>"+stat_value[4]+"</h1>";
+	rx_discarded.innerHTML 	= "<h1>"+stat_value[5]+"</h1>";
+	rx_hdr_errors.innerHTML 	=   "<h1>"+stat_value[6]+"</h1>";
+	rx_addr_errors.innerHTML 	= "<h1>"+stat_value[7]+"</h1>";
+	rx_no_proto.innerHTML 	= "<h1>"+stat_value[8]+"</h1>";
+	rx_frag_recvd.innerHTML 	=   "<h1>"+stat_value[9]+"</h1>";
+	rx_frag_reasmd.innerHTML 	= "<h1>"+stat_value[10]+"</h1>";
+	rx_frag_discarded.innerHTML 	= "<h1>"+stat_value[11]+"</h1>";
+	tx_total.innerHTML 	=   "<h1>"+stat_value[12]+"</h1>";
+	tx_missed.innerHTML 	= "<h1>"+stat_value[13]+"</h1>";
+	tx_errors.innerHTML 	= "<h1>"+stat_value[14]+"</h1>";
+	tx_discarded.innerHTML 	=   "<h1>"+stat_value[15]+"</h1>";
+	tx_frag_fragd.innerHTML 	= "<h1>"+stat_value[16]+"</h1>";
+	tx_frag_sent.innerHTML 	= "<h1>"+stat_value[17]+"</h1>";
+	tx_frag_discarded.innerHTML 	= "<h1>"+stat_value[18]+"</h1>";
+}
+
+function loop() {
+	if (!data_received)
+		makeRequest("ipstat.cgi");
+
+	setTimeout("loop()", 1000);
+}
+
+window.onload=loop;
+
+</script>
+
+</head>
+<body>
+
+<a href="http://www.freescale.com" title="Freescale"><img src="header.gif" alt="Freescale Semiconductor" width="990" height="50" border="0"></a>
+
+<div id="lfnvcl">
+	
+	<ul id="lnv">
+	<li><h3><a href="index.html" class="pt">Webserver Home</a></h3></li>
+	<li><h3><a href="ipstat.html" class="ar">Network Status...</a></h3>
+          <ul>
+	    <li><a href="ipstat.html">IP Stats</a></li>
+	    <li><a href="icmpstat.html">ICMP Stats</a></li>
+	    <li><a href="udpstat.html">UDP Stats</a></li>
+	    <li><a href="tcpstat.html">TCP Stats</a></li>
+
+          </ul>
+        </li>
+	<li><a href="rtc.html">System Run Time (RTC)</a></li>
+	</ul>
+</div>
+
+ <div id="mncnt" class="cframe">
+
+  <div class="padMe5"></div>
+  <div class="lcn" style="width: 594px; height: 269px">
+
+   <div class="hrw"><hr></div>
+   <h1>
+    <strong>IP Stats</strong>
+    </h1>
+
+ <div class="hrw"><hr></div>
+
+
+
+<DIV id="rx_total" STYLE="position:absolute; top:100px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="rx_delivered" STYLE="position:absolute; top:125px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="rx_forwarded" STYLE="position:absolute; top:150px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="rx_missed" STYLE="position:absolute; top:175px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="rx_errors" STYLE="position:absolute; top:200px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="rx_discarded" STYLE="position:absolute; top:225px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="rx_hdr_errors" STYLE="position:absolute; top:250px; left:215px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="rx_addr_errors" STYLE="position:absolute; top:275px; left:215px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="rx_no_proto" STYLE="position:absolute; top:300px; left:215px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="rx_frag_recvd" STYLE="position:absolute; top:325px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="rx_frag_reasmd" STYLE="position:absolute; top:350px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="rx_frag_discarded" STYLE="position:absolute; top:375px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="tx_total" STYLE="position:absolute; top:400px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="tx_missed" STYLE="position:absolute; top:425px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="tx_errors" STYLE="position:absolute; top:450px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="tx_discarded" STYLE="position:absolute; top:475px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="tx_frag_fragd" STYLE="position:absolute; top:500px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="tx_frag_sent" STYLE="position:absolute; top:525px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+<DIV id="tx_frag_discarded" STYLE="position:absolute; top:550px; left:200px;width:54px">
+	<h1>0</h1></DIV>
+
+
+<DIV id="rx_total_name" STYLE="position:absolute; top:100px; left:250px">
+	<h1>Packets Received</h1></DIV>
+<DIV id="rx_delivered_name" STYLE="position:absolute; top:125px; left:250px">
+	<h1>Packets Delivered</h1></DIV>
+<DIV id="rx_forwarded_name" STYLE="position:absolute; top:150px; left:250px">
+	<h1>Packets Forwarded</h1></DIV>
+<DIV id="rx_missed_name" STYLE="position:absolute; top:175px; left:250px">
+	<h1>Discarded for lack of resources</h1></DIV>
+<DIV id="rx_errors_name" STYLE="position:absolute; top:200px; left:250px">
+	<h1>Discarded due to internal errors</h1></DIV>
+<DIV id="rx_discarded_name" STYLE="position:absolute; top:225px; left:250px">
+	<h1>Discarded for other reasons</h1></DIV>
+<DIV id="rx_hdr_errors_name" STYLE="position:absolute; top:250px; left:250px">
+	<h1>with header errors</h1></DIV>
+<DIV id="rx_addr_errors_name" STYLE="position:absolute; top:275px; left:250px">
+	<h1>with an illegal destination</h1></DIV>
+<DIV id="rx_no_proto_name" STYLE="position:absolute; top:300px; left:250px">
+	<h1>with unknown protocols</h1></DIV>
+<DIV id="rx_frag_recvd_name" STYLE="position:absolute; top:325px; left:250px">
+	<h1>Fragments Received</h1></DIV>
+<DIV id="rx_frag_reasmd_name" STYLE="position:absolute; top:350px; left:250px">
+	<h1>Fragments Reassembled</h1></DIV>
+<DIV id="rx_frag_discarded_name" STYLE="position:absolute; top:375px; left:250px">
+	<h1>Fragments Discarded</h1></DIV>
+<DIV id="tx_total_name" STYLE="position:absolute; top:400px; left:250px">
+	<h1>Packets Sent</h1></DIV>
+<DIV id="tx_missed_name" STYLE="position:absolute; top:425px; left:250px">
+	<h1>Unsent for lack of resources</h1></DIV>
+<DIV id="tx_errors_name" STYLE="position:absolute; top:450px; left:250px">
+	<h1>Unsent due to internal errors</h1></DIV>
+<DIV id="tx_discarded_name" STYLE="position:absolute; top:475px; left:250px">
+	<h1>Destinations found unreachable</h1></DIV>
+<DIV id="tx_frag_fragd_name" STYLE="position:absolute; top:500px; left:250px">
+	<h1>Packets Fragmented</h1></DIV>
+<DIV id="tx_frag_sent_name" STYLE="position:absolute; top:525px; left:250px">
+	<h1>Fragments Sent</h1></DIV>
+<DIV id="tx_frag_discarded_name" STYLE="position:absolute; top:550px; left:250px">
+	<h1>Fragmentation Failures</h1></DIV>
+
+</div>
+</div>
+</body>
+</html>		

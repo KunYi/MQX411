@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<gui>
+	<includes>
+		<include>
+			<path>usb\host\source\include\host_cnfg.h</path>
+			<tabname>USBH</tabname>
+			<define name="USBCFG_KHCI">1</define>
+		</include>
+		<include>
+			<path>mqx\source\bsp\twrk20d72m\twrk20d72m.h</path>
+			<tabname>BSP</tabname>
+			<order>10</order>
+		</include>
+	</includes>
+</gui>

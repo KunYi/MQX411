@@ -1,0 +1,49 @@
+<?xml version="1.0"?><projectDescription>
+
+	<name>keyboard2mouse_twrk70f120m</name>
+
+	<comment></comment>
+
+	<projects>
+
+	</projects>
+
+	<buildSpec>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+
+			<triggers>clean,full,incremental,</triggers>
+
+			<arguments>
+
+			</arguments>
+
+		</buildCommand>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+
+			<triggers>full,incremental,</triggers>
+
+			<arguments>
+
+			</arguments>
+
+		</buildCommand>
+
+	</buildSpec>
+
+	<natures>
+
+		<nature>org.eclipse.cdt.core.cnature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+
+	</natures>
+
+<linkedResources><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/hidkeyboard.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/hidkeyboard.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/hidkeyboard.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/hidkeyboard.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/mouse.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/mouse.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/mouse.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/mouse.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/usb_classes.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_classes.h</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/usb_classes.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_classes.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/usb_descriptor.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_descriptor.c</locationURI></link><link><name>Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Source/usb_descriptor.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_descriptor.h</locationURI></link></linkedResources><variableList><variable><name>MQX_ROOT_DIR</name><value>${PROJECT_LOC}/../../../../../../../..</value></variable></variableList></projectDescription>

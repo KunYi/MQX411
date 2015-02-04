@@ -1,0 +1,49 @@
+<?xml version="1.0"?><projectDescription>
+
+	<name>mfs_twrk64f120m</name>
+
+	<comment></comment>
+
+	<projects>
+
+	</projects>
+
+	<buildSpec>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+
+			<triggers>clean,full,incremental,</triggers>
+
+			<arguments>
+
+			</arguments>
+
+		</buildCommand>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+
+			<triggers>full,incremental,</triggers>
+
+			<arguments>
+
+			</arguments>
+
+		</buildCommand>
+
+	</buildSpec>
+
+	<natures>
+
+		<nature>org.eclipse.cdt.core.cnature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+
+	</natures>
+
+<linkedResources><link><name>MFS_Include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Include/mfs_cnfg.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/mfs_cnfg.h</locationURI></link><link><name>MFS_Include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Include/mfs_prv.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/mfs_prv.h</locationURI></link><link><name>MFS_Include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Include/mfs_rev.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/mfs_rev.h</locationURI></link><link><name>MFS_Include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Include/mfs.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/mfs.h</locationURI></link><link><name>MFS_Include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Include/part_mgr.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/part_mgr.h</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/dir_read.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/dir_read.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_attribute.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_attribute.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_cluster.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_cluster.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_create.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_create.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_data_sector.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_data_sector.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_delete.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_delete.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_dir_entry.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_dir_entry.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_directory.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_directory.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_fat.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_fat.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_format.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_format.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_handle.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_handle.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_init.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_init.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_lfn.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_lfn.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_misc.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_misc.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_open.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_open.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_parse.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_parse.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_read.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_read.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_rename.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_rename.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_rw.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_rw.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_search.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_search.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_time.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_time.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_valdev.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_valdev.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/mfs_write.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/mfs_write.c</locationURI></link><link><name>MFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>MFS_Source/part_mgr.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/generic/part_mgr.c</locationURI></link></linkedResources><variableList><variable><name>MQX_ROOT_DIR</name><value>${PROJECT_LOC}/../../../..</value></variable></variableList></projectDescription>

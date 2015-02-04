@@ -1,0 +1,71 @@
+/*###ICF### Section handled by ICF editor, don't touch! ****/
+/*-Editor annotation file-*/
+/* IcfEditorFile="$TOOLKIT_DIR$\config\ide\IcfEditor\a_v1_0.xml" */
+/*-Specials-*/
+
+
+// NOTE: do not use memory over 0x3f07_0000 for ROM data
+define symbol __ICFEDIT_intvec_start__              = 0x20000800;
+define symbol __ICFEDIT_region_ROM_start__          = 0x20000800;
+define symbol __ICFEDIT_region_ROM_end__            = 0x2002fff0;
+define symbol __ICFEDIT_region_RAM_start__          = 0x3f070000;
+define symbol __ICFEDIT_region_RAM_end__            = 0x3f07ebe0;
+define symbol __ICFEDIT_region_RESERVED_start__     = 0x3f07ebf0;
+define symbol __ICFEDIT_region_RESERVED_end__       = 0x3f07eff0;
+
+
+/*-Sizes-*/
+define symbol __ICFEDIT_size_bootstack__ = 0x100;
+define symbol __ICFEDIT_size_sysstack__ = 0;
+define symbol __ICFEDIT_size_fiqstack__ = 0;
+define symbol __ICFEDIT_size_undstack__ = 0;
+define symbol __ICFEDIT_size_abtstack__ = 0;
+
+define symbol CONF_OFFSET       = 0x20000000;
+define symbol IVT_OFFSET        = 0x20000400;
+define symbol BOOT_DATA_OFFSET  = 0x20000420;
+define symbol DCD_OFFSET        = 0x20000430;
+
+define exported symbol __VECTOR_TABLE_ROM_START = 0x00000000;
+
+define exported symbol __DEFAULT_PROCESSOR_NUMBER = 1;
+define exported symbol __DEFAULT_INTERRUPT_STACK_SIZE = 0x800;  //1024;
+
+/* Just to pass compilation with default user_config */
+define exported symbol __SHARED_RAM_START               = 0x3f040000;
+define exported symbol __SHARED_RAM_END                 = 0x3f04fff0;
+define exported symbol __SRAM_POOL_START                = __ICFEDIT_region_RAM_start__;
+define exported symbol __SRAM_POOL_END                  = __ICFEDIT_region_RAM_end__;
+define exported symbol __UNCACHED_DATA_START            = __ICFEDIT_region_RAM_start__;
+define exported symbol __UNCACHED_DATA_END              = __ICFEDIT_region_RAM_end__;
+
+/* mem_init writes a storeblock_struct at the end of kernel data, max size 32 bytes */
+define exported symbol __BOOT_STACK_ADDRESS = __ICFEDIT_region_RAM_end__ - __ICFEDIT_size_bootstack__;
+
+define exported symbol __KERNEL_DATA_END = __ICFEDIT_region_RAM_end__;
+
+define memory mem with size = 4G;
+define region ROM_region        = mem:[from __ICFEDIT_region_ROM_start__   to __ICFEDIT_region_ROM_end__];
+define region RAM_region        = mem:[from __ICFEDIT_region_RAM_start__   to __ICFEDIT_region_RAM_end__];
+define region RESERVED_region   = mem:[from __ICFEDIT_region_RESERVED_start__   to __ICFEDIT_region_RESERVED_end__];
+
+define block SYS_STACK with alignment = 8, size = __ICFEDIT_size_sysstack__ { };
+define block FIQ_STACK with alignment = 8, size = __ICFEDIT_size_fiqstack__ { };
+define block UND_STACK with alignment = 8, size = __ICFEDIT_size_undstack__ { };
+define block ABT_STACK with alignment = 8, size = __ICFEDIT_size_abtstack__ { };
+define block KERNEL_DATA   with alignment = 32 { section .kernel_data };
+define block VECTOR_TBL    with alignment = 32 { section .vector_tbl };
+
+initialize by copy { readwrite, section .boot_reserved_data, section .boot_reserved_code };
+do not initialize  { section .noinit };
+do not initialize  { section .kernel_data };
+place at address mem:CONF_OFFSET { section .conf };
+place at address mem:IVT_OFFSET { section .ivt };
+place at address mem:BOOT_DATA_OFFSET { readonly section .boot_data };
+place at address mem:DCD_OFFSET { readonly section .dcd };
+
+keep{section .conf, section .ivt, section .boot_data, section .dcd};
+place in ROM_region         { first block head { section STARTUP }, readonly, block VECTOR_TBL };
+place in RAM_region         { readwrite, block SYS_STACK,  block FIQ_STACK, block UND_STACK, block ABT_STACK, last block KERNEL_DATA };
+place in RESERVED_region    { section .boot_reserved_data, section .boot_reserved_code };
+

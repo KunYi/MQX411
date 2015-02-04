@@ -1,0 +1,169 @@
+<?xml version="1.0"?><projectDescription>
+
+	<name>usbd_twrvf65gs10_a5</name>
+
+	<comment></comment>
+
+	<projects>
+
+	</projects>
+
+	<buildSpec>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+
+			<triggers>clean,full,incremental,</triggers>
+
+			<arguments>
+
+				<dictionary>
+
+					<key>?name?</key>
+
+					<value></value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.append_environment</key>
+
+					<value>true</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
+
+					<value>all</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.buildArguments</key>
+
+					<value></value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.buildCommand</key>
+
+					<value>make</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.buildLocation</key>
+
+					<value>${ProjDirPath}/Build</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
+
+					<value>clean</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.contents</key>
+
+					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
+
+					<value>false</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
+
+					<value>true</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
+
+					<value>true</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
+
+					<value>all</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.stopOnError</key>
+
+					<value>true</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
+
+					<value>true</value>
+
+				</dictionary>
+
+			</arguments>
+
+		</buildCommand>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+
+			<triggers>full,incremental,</triggers>
+
+			<arguments>
+
+			</arguments>
+
+		</buildCommand>
+
+	</buildSpec>
+
+	<natures>
+
+		<nature>org.eclipse.cdt.core.cnature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+
+	</natures>
+
+	<linkedResources>
+
+	<link><name>USB_Class_Drivers/audio</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/audio/usb_audio.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/audio/usb_audio.c</locationURI></link><link><name>USB_Class_Drivers/audio</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/audio/usb_audio.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/include/usb_audio.h</locationURI></link><link><name>USB_Class_Drivers/cdc</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/cdc/usb_cdc.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/cdc/usb_cdc.c</locationURI></link><link><name>USB_Class_Drivers/cdc</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/cdc/usb_cdc_pstn.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/cdc/usb_cdc_pstn.c</locationURI></link><link><name>USB_Class_Drivers/cdc</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/cdc/usb_cdc.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/include/usb_cdc.h</locationURI></link><link><name>USB_Class_Drivers/cdc</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/cdc/usb_cdc_pstn.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/include/usb_cdc_pstn.h</locationURI></link><link><name>USB_Class_Drivers/usb_class</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/usb_class/usb_class.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/common/usb_class.c</locationURI></link><link><name>USB_Class_Drivers/usb_class</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/usb_class/usb_class.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/include/usb_class.h</locationURI></link><link><name>USB_Device/include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/include/usb.h</name><type>1</type><locationURI>PARENT-4-PROJECT_LOC/common/include/usb.h</locationURI></link><link><name>USB_Device/include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/include/usb_debug.h</name><type>1</type><locationURI>PARENT-4-PROJECT_LOC/common/include/usb_debug.h</locationURI></link><link><name>USB_Device/include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/include/usb_desc.h</name><type>1</type><locationURI>PARENT-4-PROJECT_LOC/common/include/usb_desc.h</locationURI></link><link><name>USB_Device/include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/include/usb_error.h</name><type>1</type><locationURI>PARENT-4-PROJECT_LOC/common/include/usb_error.h</locationURI></link><link><name>USB_Device/include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/include/usb_misc.h</name><type>1</type><locationURI>PARENT-4-PROJECT_LOC/common/include/usb_misc.h</locationURI></link><link><name>USB_Device/include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/include/usb_types.h</name><type>1</type><locationURI>PARENT-4-PROJECT_LOC/common/include/usb_types.h</locationURI></link><link><name>USB_Device/include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/include/usb_misc_prv.h</name><type>1</type><locationURI>PARENT-4-PROJECT_LOC/common/include/usb_misc_prv.h</locationURI></link><link><name>USB_Device/include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/include/usb_prv.h</name><type>1</type><locationURI>PARENT-4-PROJECT_LOC/common/include/usb_prv.h</locationURI></link><link><name>USB_Low_Level_Driver/ehci</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Low_Level_Driver/ehci/callback_ehci.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/device/ehci/callback_ehci.c</locationURI></link><link><name>USB_Low_Level_Driver/ehci</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Low_Level_Driver/ehci/ehci_dev_main.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/device/ehci/ehci_dev_main.c</locationURI></link><link><name>USB_Low_Level_Driver/ehci</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Low_Level_Driver/ehci/ehci_dev_main.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/ehci/ehci_dev_main.h</locationURI></link><link><name>USB_Low_Level_Driver/ehci</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Low_Level_Driver/ehci/ehci_prv.h</name><type>1</type><locationURI>PARENT-4-PROJECT_LOC/host/source/host/ehci/ehci_prv.h</locationURI></link><link><name>USB_Low_Level_Driver/ehci</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Low_Level_Driver/ehci/ehci_usbprv.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/ehci/ehci_usbprv.h</locationURI></link><link><name>USB_Class_Drivers/framework</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/framework/usb_framework.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/common/usb_framework.c</locationURI></link><link><name>USB_Class_Drivers/framework</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/framework/usb_framework.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/include/usb_framework.h</locationURI></link><link><name>USB_Class_Drivers/hid</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/hid/usb_hid.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/hid/usb_hid.c</locationURI></link><link><name>USB_Class_Drivers/hid</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/hid/usb_hid.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/include/usb_hid.h</locationURI></link><link><name>USB_Device/include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/include/usb_stack_config.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/include/usb_stack_config.h</locationURI></link><link><name>USB_Device/include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/include/devapi.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/devapi.h</locationURI></link><link><name>USB_Device/include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/include/dev_main.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/dev_main.h</locationURI></link><link><name>USB_Device/include</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/include/dev_cnfg.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/dev_cnfg.h</locationURI></link><link><name>USB_Class_Drivers/msd</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/msd/usb_msc.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/msd/usb_msc.c</locationURI></link><link><name>USB_Class_Drivers/msd</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/msd/usb_msc_scsi.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/msd/usb_msc_scsi.c</locationURI></link><link><name>USB_Class_Drivers/msd</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/msd/usb_msc.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/include/usb_msc.h</locationURI></link><link><name>USB_Class_Drivers/msd</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/msd/usb_msc_scsi.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/include/usb_msc_scsi.h</locationURI></link><link><name>USB_Device/os</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/os/mqx_dev.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/include/rtos/mqx_dev.h</locationURI></link><link><name>USB_Class_Drivers/phdc</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/phdc/usb_phdc.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/phdc/usb_phdc.c</locationURI></link><link><name>USB_Class_Drivers/phdc</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Class_Drivers/phdc/usb_phdc.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/classes/include/usb_phdc.h</locationURI></link><link><name>USB_Device/source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/source/dev_cncl.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/device/dev_cncl.c</locationURI></link><link><name>USB_Device/source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/source/dev_ep_deinit.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/device/dev_ep_deinit.c</locationURI></link><link><name>USB_Device/source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/source/dev_main.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/device/dev_main.c</locationURI></link><link><name>USB_Device/source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/source/dev_recv.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/device/dev_recv.c</locationURI></link><link><name>USB_Device/source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/source/dev_send.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/device/dev_send.c</locationURI></link><link><name>USB_Device/source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/source/dev_shut.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/device/dev_shut.c</locationURI></link><link><name>USB_Device/source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>USB_Device/source/dev_utl.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/device/dev_utl.c</locationURI></link></linkedResources>
+
+	<variableList>
+
+	<variable><name>MQX_ROOT_DIR</name><value>${PROJECT_LOC}/../../../../..</value></variable></variableList>
+
+</projectDescription>

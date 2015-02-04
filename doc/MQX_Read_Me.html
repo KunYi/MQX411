@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">	               
+    <head>		                           
+        <meta charset="utf-8">  		                           
+        <title>MQX Documentation                           
+        </title>		                           
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">		                           
+        <meta name="description" content="">		                           
+        <!-- Styles from cdns -->   		                           
+        <link href=".doc/css/bootstrap.min.css" rel="stylesheet">	 		                           
+        <link href=".doc/css/style.css" rel="stylesheet">	                    
+        <link href=".doc/css/docs.css" rel="stylesheet">	                    
+        <script src=".doc/js/jquery.min.js"></script>                       
+        <script src=".doc/js/bootstrap-tab.js"></script>      		 		           
+        <script type="text/javascript">
+		    function Toggle(i) {
+			var el = document.getElementById("desc"+i);
+			if (el.style.display == "block") { el.style.display = "none"; }
+	                else { el.style.display = "block"; }
+		    }
+		</script>    	               
+    </head>	               
+    <body>                   
+    </body>		               
+    <div class="row-fluid">			                           
+        <div class="span8 offset2">				                                       
+            <img src=".doc/img/FS_COLOR_LOGOSM_JPG.jpg">			                           
+        </div>			 		               
+    </div>		               
+    <div class="row-fluid">			                           
+        <div id="menu" class="span8 offset2">                          
+        </div>		               
+    </div>		               
+    <div class="row-fluid">			                           
+        <div class="span8 offset2">				<h1>MQX&#0153; Software Solutions</h1>				                                       
+            <p>Accelerate your design success with complimentary RTOS, TCP/IP and USB stacks provided by Freescale MQX Software Solutions. Available on Freescale processors for more than 15 years, Freescale MQX Software Solutions offer a straightforward API, which has a modular architecture and is scalable to fit most requirements, making it simple to fine tune custom applications.                                       
+            </p>				                                       
+            <p>The combination of our market-proven Freescale MQX Software Solutions and silicon portfolio provides a streamlined and powerful platform by creating a comprehensive source for hardware, software, tools and services needs.                                       
+            </p>				                                       
+            <p>Freescale MQX Software Solutions are offered together with a strong ecosystem of RTOS providers, giving you the most flexibility when selecting software solutions.                                       
+            </p>			                           
+        </div>		               
+    </div>         		               
+    <div class="row-fluid">             
+        <div class="span8 offset2">                                       
+            <div class="bs-example bs-example-tabs">                                                                         
+                <ul id="myTab" class="nav nav-tabs">                                                                                               
+                    <li class="active">                                                                                                            
+                        <a href="#doc" data-toggle="tab">Documentation</a>                                                                                        
+                    </li>                                                                                               
+                    <li>                                                                                        
+                    <a href="#examples" data-toggle="tab">Examples</a>                                                                                        
+                    </li>                                                                               
+                </ul>                                                                           
+                </li>                                                                         
+                </ul>                                                                         
+                <div id="myTabContent" class="tab-content">                                                                                               
+                    <!-- DOC START ********************************** -->                                                                                    
+                    <div class="tab-pane fade in active" id="doc">                                               			                                              
+                        <div class="span6">				                                                      
+                            <div class="row-fluid">					                                                              
+                                <div class="span12">						                                                          
+                                    <div class="box">							                                                           
+                                        <div class="row-fluid">								                                                                   
+                                            <div class="span12">									<h2>Getting started with Freescale MQX</h2>								                                                                   
+                                            </div>							                                                           
+                                        </div>							                                                                          
+                                        <div class="row-fluid">								                                                                   
+                                            <div class="span9">									<h3>What is inside?</h3>								                                                                   
+                                            </div>                                                                  
+                                            <div class="span3">						                                                                       
+                                                <p>                                                                              
+                                                    <a onclick="Toggle(100)">details...</a>                                                                      
+                                                </p>					                                                               
+                                            </div>							                                                           
+                                        </div>							                                                           
+                                        <div class="row-fluid desc"  desc" id="desc100">								                                                                   
+                                            <div class="span12">									                                                                           
+                                                <p>										                                                                 
+                                                    <a href="MQX_Release_Notes.pdf#page=5">See release content in MQX release notes</a>									                                                                           
+                                                </p>								                                                                   
+                                            </div>							                                                           
+                                        </div>                                                                 
+                                        <div class="row-fluid">								                                                                   
+                                            <div class="span9">									<h3>Build MQX RTOS</h3>								                                                                   
+                                            </div>							                              		                                                                               
+                                            <div class="span3">						                                                                     
+                                                <p>                                                                            
+                                                    <a onclick="Toggle(101)">details...</a>                                                                    
+                                                </p>					                                                             
+                                            </div>                            
+                                        </div>					                                                            
+                                        <div class="row-fluid desc"  desc" id="desc101">								                                                                   
+                                            <div class="span12">									                                                                           
+                                                <p>										                                                                 
+                                                    <a href="tools\iar\MQX_IAR_Getting_Started.pdf#page=5">Build using IAR Embedded Workbench</a>									                                                                 
+                                                    <a href="tools\ds5\MQX_DS5_Getting_Started.pdf#page=5">Build using ARM DS5</a>                                                                
+                                                    <a href="tools\cw\MQX_CW10_Getting_Started.pdf#page=4">Build using CodeWarrior v10</a>                                                                
+                                                    <a href="tools\uv4\MQX_uVision4_Getting_Started.pdf#page=5">Build using MDK Keil uVision4</a>                                                                
+                                                    <a href="tools\gnu\MQX_GNU_Getting_Started.pdf#page=5">Build using makefiles and GNU toolchain</a>                                                                          
+                                                    <a href="tools\kds\MQX_KDS_Getting_Started.pdf#page=5">Build using Kinetis Design Studio</a>                                                                          
+                                                </p>								                                                                   
+                                            </div>							                                                           
+                                        </div>                                                          
+                                        <div class="row-fluid">								                                                                   
+                                            <div class="span9">									<h3>Prepare your board</h3>								                                                                   
+                                            </div>                                                 
+                                            <div class="span3">						                                                                       
+                                                <p>                                                                              
+                                                    <a onclick="Toggle(102)">details...</a>                                                                      
+                                                </p>					                                                               
+                                            </div>							                                                           
+                                        </div>              			                             
+                                        <div class="row-fluid desc"  desc" id="desc102">								                                                                   
+                                            <div class="span12">									                                                                           
+                                                <p>										                                                                 
+                                                    <a href="MQX_Getting_Started.pdf#page=29">Getting Started with MQX - Chapter 8 board settings</a>									                                                                           
+                                                </p>								                                                                   
+                                            </div>							                                                           
+                                        </div>				                              						                                                           
+                                        <div class="row-fluid">								                                                                   
+                                            <div class="span9">									<h3>Build and Run example application</h3>								                                                                   
+                                            </div>			                                 
+                                            <div class="span3">						                                                                       
+                                                <p>                                                                              
+                                                    <a onclick="Toggle(103)">details...</a>                                                                      
+                                                </p>					                                                               
+                                            </div>				                                                           
+                                        </div>							                             
+                                        <div class="row-fluid desc"  desc" id="desc103">								                                                                   
+                                            <div class="span12">									                                                                           
+                                                <p>	                                         
+                                                    <a href="#examples" data-toggle="tab">Select example from list of example applications</a>									                                                                               
+                                                    <a href="mqx/MQX_Writing_Your_First_Application.pdf">Write and run your first application</a>									                                                                           
+                                                </p>								                                                                   
+                                            </div>							                                                           
+                                        </div>               							                                                           
+                                        <div class="row-fluid">								                                                                                                    
+                                            <div class="span9">									<h3>Debug using Task Aware Debugger</h3>								                                                                   
+                                            </div>							                                                                 
+                                            <div class="span3">						                                                                       
+                                                <p>                                                                              
+                                                    <a onclick="Toggle(104)">details...</a>                                                                      
+                                                </p>					                                                               
+                                            </div>                                           
+                                        </div>                            
+                                        <div class="row-fluid desc"  desc" id="desc104">								                                                                   
+                                            <div class="span12">									                                                                           
+                                                <p>										                                                                 
+                                                    <a href="tools\iar\MQX_IAR_Getting_Started.pdf#page=5">TAD in IAR Embedded Workbench - see chapter 3.4</a>									                                                                 
+                                                    <a href="tools\ds5\MQX_DS5_Getting_Started.pdf#page=5">TAD in ARM DS5 - see chapter 4</a>                                                                
+                                                    <a href="tools\cw\MQX_CW10_Getting_Started.pdf#page=4">TAD in CodeWarrior v10 - see page 27</a>                                                                
+                                                    <a href="tools\uv4\MQX_uVision4_Getting_Started.pdf#page=5">TAD in MDK Keil uVision4 - see chapter 3.4</a>                                                                
+                                                    <a href="http://www.freescale.com/mqx#page=5">TAD in GNU toolchain is comming soon</a>                                                                              
+                                                    <a href="tools/cw/MQX_RuntimeTAD_Getting_Started.pdf#page=3">Getting Started with Runtime TAD Tool for MQX</a>									                                                                           
+                                                </p>								                                                                   
+                                            </div>							                                                           
+                                        </div>							               							               						                                                   
+                                    </div>                        
+                                    <div class="box">							                                                                              
+                                        <div class="row-fluid">								                                                                                      
+                                            <div class="span12">									<h2>MQX Software Solutions</h2>								                                                                                      
+                                            </div>							                                                                              
+                                        </div>							                                                                              
+                                        <div class="row-fluid">								                                                                                      
+                                            <div class="span12">									                                                                                              
+                                                <p>										                                                                                                      
+                                                    <a title="MQX Software Solutions" href="http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MQX">Freescale MQX Software Solutions</a>									                                                                                              
+                                                </p>								                                                                                      
+                                            </div>							                                                                              
+                                        </div>							                                                                              
+                                        <div class="row-fluid">								                                                                                      
+                                            <div class="span12">									                                                                                              
+                                                <p>										                                                                                                      
+                                                    <a title="MQX Lite RTOS" href="http://www.freescale.com/webapp/sps/site/overview.jsp?code=MQXLITERTOS">Freescale MQX Lite RTOS</a>									                                                                                              
+                                                </p>								                                                                                      
+                                            </div>							                                                                              
+                                        </div>							                                                                              
+                                        <div class="row-fluid">								                                                                                      
+                                            <div class="span12">									                                                                                              
+                                                <p>										                                                                                                      
+                                                    <a title="MQX Community" href="http://community.freescale.com/community/mqx">Freescale MQX Community</a>									                                                                                              
+                                                </p>								                                                                                      
+                                            </div>							                                                                              
+                                        </div>							                                                                              
+                                        <div class="row-fluid">								                                                                                      
+                                            <div class="span12">									                                                                                              
+                                                <p>										                                                                                                      
+                                                    <a title="MQX Webinars" href="http://www.freescale.com/webapp/search/Serp.jsp?QueryText=MQX&sessionChecker=tLxGLW0LwXbxgPn1Nnb2y93qx4vnRJfCKQzZpx3Z0NtMFK823hT7%211114734252%211268134987190&fsrch=1&attempt=1&showCustomCollateral=false&RELEVANCE=true&fromTrng=false&showAllCategories=false&isResult=false&isFromFlex=false&isTree=false&pageSize=25&fromASP=false&isAdvanceSearch=false&fromPSP=false&lastQueryText=MQX&SelectedAsset=Training&iteration=1&assetLocked=true&assetLockedForNavigation=false&fromCust=false&fromDAP=false&fromWebPages=false&isComparison=false&Training=Training%2F000JONRMWLZT%60%60On+Demand">Join our webinars</a>									                                                                                              
+                                                </p>								                                                                                      
+                                            </div>							                                                                              
+                                        </div>						                                                                      
+                                    </div>					                                                              
+                                </div>				                                                      
+                            </div>				                                                      
+                            <div class="row-fluid">					                                                              
+                                <div class="span12">						                                                                      
+                                    <div class="box">							                                                                              
+                                        <div class="row-fluid">								                                                                                      
+                                            <div class="span12">									<h2>Components Included in Freescale MQX Software Solutions</h2>								                                                                                      
+                                            </div>							                                                                              
+                                        </div>							                                                                              
+                                        <div class="row-fluid">								                                                                                      
+                                            <div class="span12">									                                                                                              
+                                                <p>										                                                                                                      
+                                                    <a href="http://www.freescale.com/webapp/sps/site/overview.jsp?code=MQXRTOS">Freescale MQX RTOS</a>									                                                                                              
+                                                </p>								                                                                                      
+                                            </div>							                                                                              
+                                        </div>							                                                                              
+                                        <div class="row-fluid">								                                                                                      
+                                            <div class="span12">									                                                                                              
+                                                <p>										                                                                                                      
+                                                    <a href="http://www.freescale.com/webapp/sps/site/overview.jsp?code=MQXRTCS">Freescale MQX RTCS (Communication Suite)</a>									                                                                                              
+                                                </p>								                                                                                      
+                                            </div>							                                                                              
+                                        </div>							                                                                              
+                                        <div class="row-fluid">								                                                                                      
+                                            <div class="span12">									                                                                                              
+                                                <p>										                                                                                                      
+                                                    <a href="http://www.freescale.com/webapp/sps/site/overview.jsp?code=MQXMFS">Freescale MQX File System (MFS)</a>									                                                                                              
+                                                </p>								                                                                                      
+                                            </div>							                                                                              
+                                        </div>							                                                                              
+                                        <div class="row-fluid">								                                                                                      
+                                            <div class="span12">									                                                                                              
+                                                <p>										                                                                                                      
+                                                    <a href="http://www.freescale.com/webapp/sps/site/overview.jsp?code=MQXUSB">Freescale MQX USB Host/Device Stack</a>									                                                                                              
+                                                </p>								                                                                                      
+                                            </div>							                                                                              
+                                        </div>						                                                                      
+                                    </div>					                                                              
+                                </div>				                                                      
+                            </div>				                                                      
+                            <div class="row-fluid">					                                                              
+                                <div class="span12">						                                                                      
+                                    <div class="box">							                                                                              
+                                        <div class="row-fluid">								                                                                                      
+                                            <div class="span12">									<h2>MQX ecosystem</h2>								                                                                                      
+                                            </div>							                                                                              
+                                        </div>							                                                                              
+                                        <!--<div class="row-fluid">
+                                                              								<div class="span12">
+                                                              									<p><a>Freescale NAND Flash File System</a></p>
+                                                              								</div>
+                                                              							</div>
+                                                              							<div class="row-fluid">
+                                                              								<div class="span12">
+                                                              									<p><a>Freescale MQX RTCS IPv6 stack</a></p>
+                                                              								</div>
+                                                              							</div>-->  							                                                                              
+                                        <div class="row-fluid">								                                                                                      
+                                            <div class="span12">									                                                                                              
+                                                <p>                                                                                                     
+                                                    <a href="http://www.freescale.com/touchsensing">Freescale Touch-Sensing Software</a>                                                                                             
+                                                </p>								                                                                                      
+                                            </div>							                                                                              
+                                        </div>							                                                                              
+                                        <div class="row-fluid">								                                                                                      
+                                            <div class="span12">									                                                                                              
+                                                <p>                                                                                                     
+                                                    <a href="http://www.freescale.com/webapp/sps/site/overview.jsp?code=THIRDPARTY">Use additional 3rd parties components</a>                                                                                             
+                                                </p>								                                                                                      
+                                            </div>							                                                                              
+                                        </div>						                                                                      
+                                    </div>					                                                              
+                                </div>				                                                      
+                            </div>			                                              
+                        </div>                                                       
+                        <div class="span6">				                                                      
+                            <div class="box">				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span12">						<h2>Installed PDF documentation (available offline)</h2>					                                                                      
+                                    </div>				                                                              
+                                </div>				 				                                                              
+                                <!-- M-Q-X -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span12">						<h3>MQX</h3>					                                                                      
+                                    </div>				                                                              
+                                </div>				 				                                                              
+                                <!-- MQX Release Notes -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="MQX_Release_Notes.pdf">MQX Release Notes</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(0)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc0">					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes new features, release content, release overview, and known issues and limitations. It also provides an extensive change-log to show the evolution of the product.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				 				                                                              
+                                <!-- MQX Getting Started -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="MQX_Getting_Started.pdf">Getting Started with MQX</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(1)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc1">					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes how to build MQX libraries, how to create a new MQX project, how to configure MQX BSP, how to implement task-aware debugging plug-in, how to integrate processor expert drivers into MQX BSP and board specific information related to MQX.                                                                              
+                                        </p>						 					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- Writing Your First MQX Application -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="mqx/MQX_Writing_Your_First_Application.pdf">Writing Your First MQX Application</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(2)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc2">					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document is a supplement to the MQX Getting Started. It describes how to install and set up Freescale MQX RTOS. Additionally, it contains instructions about how to build your first MQX application and how to use TAD Tool debugging.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- Freescale MQX RTOS Support User's Guide -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="MQX_Support_User_Guide.pdf">Freescale MQX RTOS Support User's Guide</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(3)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc3">					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document defines the technical support services available from Freescale for Freescale MQX RTOS. It also provides instructions on how to purchase, activate, and gain access to support services.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- MQX Reference Manual -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="mqx\MQX_Reference_Manual.pdf">MQX Reference Manual</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(4)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc4">					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document lists and describes MQX functions and data types.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- MQX User Guide -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="mqx\MQX_User_Guide.pdf">MQX User Guide</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(5)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc5">					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes using and rebuilding MQX and developing a new BSP. It provides descriptions of available kernel features.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- MQX IO User Guide -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="mqx\MQX_IO_User_Guide.pdf">MQX I/O Drivers User Guide</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(6)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc6">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes I/O drivers and their associated functions, data types, and examples.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- BSP Porting Guide -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="mqx\MQX_BSP_Porting_Guide.pdf">BSP Porting Guide</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(26)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc26">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document provides a guide to porting the MQX BSPs to the custom target hardware with a similar MCU derivative.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- BSP Porting Example User Guide -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="mqx\MQX_BSP_Porting_Example_User_Guide.pdf">BSP Porting Example User Guide</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(27)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc27">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document uses a specific example with detailed steps for porting a BSP to a different board.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- MQX Test Methodology -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="mqx\MQX_Test_Methodology.pdf">MQX Test Methodology</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(28)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc28">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document provides basic data about MQX testing.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- M-F-S -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span6">						<h3>MFS</h3>					                                                                      
+                                    </div>				                                                              
+                                </div>				 				                                                              
+                                <!-- MFS User Guide -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						 						                                                                              
+                                        <p>                                                                                     
+                                            <a href="mfs\MQX_MFS_User_Guide.pdf">MFS User Guide</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						 						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(7)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc7">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes how to use MQX MFS Embedded File System. It also includes MFS functions and data types.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- F-F-S -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span6">						<h3>FFS</h3>					                                                                      
+                                    </div>				                                                              
+                                </div>				 				                                                              
+                                <!-- FFS User Guide -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						 						                                                                              
+                                        <p>                                                                                     
+                                            <a href="ffs\MQX_FFS_User_Guide.pdf">FFS User Guide</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						 						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(24)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc24">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes how to use MQX Flash File System (FFS). It also describes the architecture of the MQX Wear Leveling module and its interface for the upper layer such as MFS and Read/Write raw operations.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- FFS Release Notes -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						 						                                                                              
+                                        <p>                                                                                     
+                                            <a href="MQX_FFS_Release_Notes.pdf">FFS Release Notes</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						 						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(25)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc25">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>FFS Release Notes describe the Flash File System for Freescale MQX RTOS.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				                                                              
+                                <!-- R-T-C-S -->  				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span12">						<h3>RTCS</h3>					                                                                      
+                                    </div>				                                                              
+                                </div>				 				                                                              
+                                <!-- RTCS User Guide -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="rtcs\MQX_RTCS_User_Guide.pdf">RTCS User Guide</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(8)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc8">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes how to set up RTCS, how to use sockets and applications and how to rebuild the library. It also lists point-to-point drivers, functions, and data types.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- IPv6 release notes -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="MQX_RTCS_IP6_Release_Notes.pdf">IPv6 Release Notes (only if installed)</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(9)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc9">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>IPv6 Release Notes describe the IPv6 Patch for Freescale RTCS running on Freescale MQX RTOS. Patch is distributed as separated package!                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- U-S-B -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span12">						<h3>USB</h3>					                                                                      
+                                    </div>				                                                              
+                                </div>				 				                                                              
+                                <!-- USB Reference Manual -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="usb\MQX_USB_Device_Reference_Manual.pdf">USB Device API Reference Manual</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(10)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc10">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes how to use USB device API data. It lists API functions which are divided into USB Device layer API, USB device class API, and USB descriptor API. Additionally, the document lists data structures and reference data types.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- USB User Guide -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="usb\MQX_USB_Device_User_Guide.pdf">USB Device User Guide</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(11)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc11">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes USB device stack architecture, how to develop new class drivers and new applications, hardware setup, and application building with different versions of CodeWarrior. It also provides HID, COM, and MSD demos.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- USB Host Reference Manual -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="usb\MQX_USB_Host_Reference_Manual.pdf">USB Host API Reference Manual</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(12)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc12">					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document provides an overview of the USB host API data. It also lists USB Chapter 9 host API, USB host class API, data structures, and data types.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- USB Host User Guide -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="usb\MQX_USB_Host_User_Guide.pdf">USB Host User Guide</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(13)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc13">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes design overview, developing applications, and working with software. It also provides HID, COM, MSD, and Audio Host demos.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- M-u-l-t-i-c-o-r-e -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span12">						<h3>Multicore</h3>					                                                                      
+                                    </div>				                                                              
+                                </div>				 				                                                              
+                                <!-- MCC User Guide -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="mcc\MQX_MCC_User_Guide.pdf">MultiCore Communication Library User Guide</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(14)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc14">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document is for Vybrid only. It describes communication enablement between applications running on ARM Cortex-A5® and ARM Cortex-M4® cores. It also includes MultiCore functions and data types.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- S-u-p-p-o-r-t-e-d T-o-o-l-c-h-a-i-n-s -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span12">						<h3>Supported Toolchains </h3>					                                                                      
+                                    </div>				                                                              
+                                </div>				 				                                                              
+                                <!-- Using MQX with CW 10.x -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="tools\cw\MQX_CW10_Getting_Started.pdf">CW for Microcontrollers v10 and MQX</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(16)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc16">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This presentation describes importing and building MQX libraries, importing and debugging MQX Hello World project, building new MQX project, and debugging with JLink.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- DS5 Getting Started -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="tools\ds5\MQX_DS5_Getting_Started.pdf">Getting Started with MQX and ARM DS5</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(17)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc17">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes how to build MQX libraries, how to run and debug MQX application, and MQX task-aware debugging in DS-5™ IDE.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- IAR Getting Started -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="tools\iar\MQX_IAR_Getting_Started.pdf">Getting Started with MQX and IAR Embedded Workbench</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(18)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc18">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes how to build MQX libraries, how to run and debug MQX application, and how to use MQX DebugI/O driver with IAR EWARM IDE.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- uVision4 Getting Started -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="tools\uv4\MQX_uVision4_Getting_Started.pdf">Getting Started with MQX and MDK-ARM Keil μVision4</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(19)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc19">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes how to build MQX libraries, how to implement MQX task-aware debugging, and how to use MQX DebugI/O driver with μVision4® IDE.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				                                                              
+                                <!-- KDS Getting Started -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="tools\kds\MQX_KDS_Getting_Started.pdf">Getting Started with MQX and Kinetis Design Studio</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(29)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc29">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes usage of the Kinetis Design Studio (KDS) for basic development tasks for Freescale MQX RTOS operating system.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span12">						<h3>Tools</h3>					                                                                      
+                                    </div>				                                                              
+                                </div>				 				                                                              
+                                <!-- MQX BSP Cloning Wizard Getting Started -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="tools\MQX_BSP_Cloning_Wizard_Getting_Started.pdf">Getting Started with MQX BSP Cloning Wizard</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(20)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc20">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes how to create a clone of an existing board. It also describes how to generate project files, how to export MQX source tree, how to install using the MQX installation manager, and how to open a board definition file.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- MQX Performance tool Gettign Started -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="tools\cw\MQX_PerfTool_Getting_Started.pdf">Getting Started with Performance Tool for MQX</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(21)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc21">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes how to use MQX Performance Tool and additional relevant information regarding MQX Performance Tool such as working with various views and creating the kernel log in application.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- How to setup Kinetis clock using PE -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="tools\cw\MQX_Howto_Setup_Kinetis_Clock_UsingPE.pdf">How-to Change Default Clock Settings in Kinetis BSPs</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(22)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc22">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes the default clock configuration in MQX BSPs and how to use Processor Expert to create custom clock configuration.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				 				                                                              
+                                <!-- Runtime TAD Getting Started -->   				                                                              
+                                <div class="row-fluid">					                                                                      
+                                    <div class="span9">						                                                                              
+                                        <p>                                                                                     
+                                            <a href="tools\cw\MQX_RuntimeTAD_Getting_Started.pdf">Getting Started with Runtime TAD Tool for MQX</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>					                                                                      
+                                    <div class="span3">						                                                                              
+                                        <p>                                                                                     
+                                            <a onclick="Toggle(23)">details...</a>                                                                             
+                                        </p>					                                                                      
+                                    </div>				                                                              
+                                </div>				                                                              
+                                <div class="row-fluid desc" id="desc23">					 					                                                                      
+                                    <div class="span12">						                                                                              
+                                        <p>This document describes how to use Runtime TAD Tool, additional Runtime TAD features, and troubleshooting. It also provides additional relevant information about the tool such as the connectivity of the tool and the application.                                                                              
+                                        </p>					                                                                      
+                                    </div>						 				                                                              
+                                </div>				                                                      
+                            </div>			                                              
+                        </div>			                                             
+                    </div>                                                                                               
+                    <!-- DOC END ********************************** -->                                                                                    
+                    <!-- EXAMPLES START ********************************** -->                                                                                    
+                    <div class="tab-pane" id="examples">                                                                                                                                          
+                        <div class="span8 offset2">                                                  <h2>Demo Applications</h2>demo/... 
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>name
+                                    </th>
+                                    <th>description
+                                    </th>
+                                    <th>readme
+                                    </th>
+                                </tr>
+                                <tr><td>hvac</td><td>Simple implementation of console-based HVAC with optional USB logging  and FTP access.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>hvac_error</td><td>Intentional error injected to the HVAC demo code to demonstrate the power of the TAD plug-in.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>web_hvac</td><td>The HVAC demo with HTTP server implementing the GUI. Ajax-based pages  demonstrating an advanced use of HTTP server./td> <td><a href="../demo/web_hvac/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>pe_demo</td><td>This example demonstrates how to use Processor Expert to configure the  MQX BSP.</td><td>&nbsp;</td>
+                                </tr>
+                            </table>                         
+                            <h2>RTCS Example Applications</h2>rtcsexamples... 
+                            </table>
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>name
+                                    </th>
+                                    <th>description
+                                    </th>
+                                    <th>readme
+                                    </th>
+                                </tr>
+                                <tr><td>shell</td><td>This is the main RTCS example that is used to demonstrate different features of the RTCS TCP/IP stack.</td><td><a href="../rtcs/examples/shell/_README.txt"><img src=".doc/img/txt_icon.png" alt="" /></a></td>
+                                </tr>
+                                <tr><td>eth_to_serial</td><td>Simple character passing between UART console and socket.</td><td><a href="../rtcs/examples/eth_to_serial/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                            </table><h2>MCC Example Applications</h2>mcc/examples... 
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>name
+                                    </th>
+                                    <th>description
+                                    </th>
+                                    <th>readme
+                                    </th>
+                                </tr>
+                                <tr><td>pingpong</td><td>This simple example shows MCC communication between two Endpoints (EP), each of them created on different core.</td><td><a href="../mcc/examples/pingpong/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                            </table>
+                            </table><h2>FFS Example Applications</h2>ffs/examples/mfs/nand_flash... 
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>name
+                                    </th>
+                                    <th>description
+                                    </th>
+                                    <th>readme
+                                    </th>
+                                </tr>
+                                <tr><td>mfs_nandflash</td><td>Console shell-based example showing how to access an MFS filesystem  mounted on the NAND flash memory.</td><td>&nbsp;</td>
+                                </tr>
+                            </table><h2>MFS Example Applications</h2>mfs/examples/... 
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>name
+                                    </th>
+                                    <th>description
+                                    </th>
+                                    <th>readme
+                                    </th>
+                                </tr>
+                                <tr><td>mfs_ftp</td><td>RTCS FTP demo accessing the MFS filesystem mounted on the USB mass  storage. For FTP example without USB functionality, refer to RTCS Shell  demo.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>mfs_usb</td><td>Console shell-based example showing how to access MFS filesystem mounted  on the USB mass storage.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>cfcard</td><td>Console shell-based example showing the MFS filesystem used with and  CFCard storage.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>ramdisk</td>   <td>Shows use of MFS accessing the external RAM (or MRAM).</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>sdcard</td>   <td>Shows use of MFS accessing the SPI-connect SD Card.</td><td>&nbsp;</td>
+                                </tr>
+                            </table><h2>USB Host Example Applications</h2>usb/host/examples/... 
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>name
+                                    </th>
+                                    <th>description
+                                    </th>
+                                    <th>readme
+                                    </th>
+                                </tr>
+                                <tr><td>audio/microphone</td><td>Able to connect USB microphone and record the sound to SD Card (wav  format)</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>audio/speaker</td>   <td>Able to connect USB speaker and play the sound from SD Card (wav format)</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>cdc/cdc_serial</td><td>This example demonstrates the virtual serial port capability with  abstract control model. Redirects the communication from CDC device,  which is connected to the board, to the serial port.</td><td><a href="../usb/device/examples/cdc/virtual_com/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>hid/keyboard</td><td>This application echoes keys pressed on the USB keyboard onto the serial  console.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>hid/mouse</td><td>Displays USB mouse events on the serial console.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>hid/keyboard+mouse</td>   <td>Keyboard and mouse demos combined in a single application.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>msd/msd_commands</td><td>Executes the standard "mass storage device" commands to the USB disk and  shows the response on the serial console (see MFS examples for USB  filesystem access).</td><td>&nbsp;</td>
+                                </tr>
+                            </table><h2>USB Device Example Applications</h2>usb/device/examples/... 
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>name
+                                    </th>
+                                    <th>description
+                                    </th>
+                                    <th>readme
+                                    </th>
+                                </tr>
+                                <tr><td>audio/generator</td>   <td>Acts as USB microphone, playing out a short audio loop.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>audio/speaker</td><td>Receive audio stream data from the host (PC) and play it out through the  I2S driver.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>msd/disk</td>   <td>Implements small storage device in internal RAM memory.</td><td><a href="../usb/device/examples/msd/disk/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>hid/mouse</td><td>Creates virtual mouse which keeps moving in a square loop, 100 pixels in  size.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>cdc/virtual_com</td>   <td>Implements a virtual serial line loopback.</td>  <td>&nbsp;</td>
+                                </tr>
+                                <tr><td>cdc/virtual_nic</td>   <td>Implements a virtual network interface cards.</td><td>&nbsp;</td>
+                                </tr>
+                            </table>                          
+<h2>MQX Example Applications</h2>mqx/examples/... 
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>name
+                                    </th>
+                                    <th>description
+                                    </th>
+                                    <th>readme
+                                    </th>
+                                </tr>
+                                <tr><td>access_usr</td><td>Demonstration of memory protection between the user and privilege tasks. can  Shows usage of FlexCAN API functions to transmit and receive CAN frames.</td><td><a href="../mqx/examples/access_usr/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>benchmrk/codesize</td><td>Contains benchmarks codes code size for different components.</td><td><a href="../mqx/examples/benchmrk/codesize/Readme.txt"><img src=".doc/img/txt_icon.png" alt="" /></a></td>
+                                </tr>
+                                <tr><td>benchmrk/timing</td><td>Contains benchmarks codes for timing for different components.</td><td><a href="../mqx/examples/benchmrk/timing/Readme.txt"><img src=".doc/img/txt_icon.png" alt="" /></a></td>
+                                </tr>
+                                <tr><td>bootloader</td>   <td>Contains basic functions for boot loader application.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>bootloader_vybrid</td><td>Shows how to load application images from FAT system on SD card or flash  QSPI boot loader and application images to QSPI Flash memory with SD  boot loader.</td><td><a href="../mqx/examples/bootloader_vybrid/Readme.txt"><img src=".doc/img/txt_icon.png" alt="" /></a></td>
+                                </tr>
+                                <tr><td>bootloader_vybrid_qspixip</td><td>Shows how the QSPI boot loader boots from the QSPI flash memory and  loads application images from FAT file system on SD card or the raw  image data from the flash memory.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>clkapi/basic</td>   <td>This demo shows basic usage of clkapi usage by manipulating.</td>  <td><a href="../mqx/examples/clkapi/basic/Readme.txt"><img src=".doc/img/txt_icon.png" alt="" /></a></td>
+                                </tr>
+                                <tr><td>clkapi/qspi</td>   <td>This is a real-world example of how CLKTREE APIs are used.</td>  <td><a href="../mqx/examples/clkapi/qspi/Readme.txt"><img src=".doc/img/txt_icon.png" alt="" /></a></a></td>
+                                </tr>
+                                <tr><td>cplus</td>   <td>Shows simple C++ application.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>dcu4</td><td>Shows the use of the DCU driver functionality on multiple layers:  display, event handling, timing update, and alpha blending.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>demo</td><td>Shows MQX multitasking and inter-process communication using standard  objects like semaphores, events, or messages. See lwdemo for the same  example using the lightweight objects.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>esai_asrc</td><td>Show how to play back/record by using ESAI and how to enable ASRC for  sample rate conversion while playing ESAI audio.</td><td><a href="../mqx/examples/esai_asrc/_readme.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>event</td>   <td>A simple demonstration of MQX events.</td><td><a href="../mqx/examples/event/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>flashx</td>   <td>A demonstration of FlashX driver functionality.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>flashx_swap</td><td>A demonstration of FlashX driver’s swap and reset functionality.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>fbdev</td><td>Shows the use of the abstract FBdev driver functionality on the frame  buffer configuration, multiple buffers flipping, and VSYNC waiting.</td><td><a href="../mqx/examples/fbdev/Readme.txt"><img src=".doc/img/txt_icon.png" alt="" /></a></td>
+                                </tr>
+                                <tr><td>flexnvm</td><td>Demonstrates use of the Flex NVM functionality on Kinetis platforms  where this feature is supported.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>freq_change</td>   <td>Show dynamic frequency change for Kinetis and ColdFire+ platforms only.</td><td><a href="../mqx/examples/freq_change/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>ftm</td>   <td>Demonstrates usage of the FTM Quadrature Decoder Driver.</td><td><a href="../mqx/examples/ftm/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>gpio</td>   <td>Shows usage of LWGPIO driver to control on-board LEDs and switches.</td><td><a href="../mqx/examples/gpio/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>hello</td>   <td>A trivial Hello World application using a single task.</td><td><a href="../mqx/examples/hello/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>hello2</td>   <td>A trivial Hello World application spread across two tasks.</td><td><a href="../mqx/examples/hello2/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>hmi</td><td>Demonstrates integration of the MQX application and the TouchSensing  library.</td><td><a href="../mqx/examples/hmi/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>hwtimer</td><td>Shows usage of HW timer driver abstraction. Demonstrates how to  initialize HW timer for various modules, set frequency, callback, start,  and stop the timer.</td>  <td><a href="../mqx/examples/hwtimer/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>i2c</td><td>Shows how to read/write data from/to external EEPROM. Additional HW  setup is needed.</td><td><a href="../mqx/examples/i2c/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>i2c_slave</td><td>Shows usage of the I2C driver in slave mode – emulates the external  EEPROM behavior.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>i2s_demo</td><td>Demonstrates use of audio I2S driver. TWR-AUDIO card is needed to run  this example.</td><td><a href="../mqx/examples/i2s_demo/Readme.txt"><img src=".doc/img/txt_icon.png" alt="" /></a></td>
+                                </tr>
+                                <tr><td>io</td>   <td>Demonstrates use of an alternate UART port as a console output.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>io_expander</td>   <td>Shows how to operate a pin on the I/O Expander chip.</td><td><a href="../mqx/examples/io_expander/_readme.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>ipc</td>   <td>UART-based inter-processor communication demonstration.</td><td><a href="../mqx/examples/ipc/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>irda</td>   <td>&nbsp;</td>  <td><a href="../mqx/examples/irda/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>isr</td><td>Shows how to install an interrupt service routine and how to chain it  with the previous handler.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>klog</td><td>Shows kernel events being logged and later the log entries dumped on the  console.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>log</td>   <td>Shows the application-specific logging feature.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>lowpower</td><td>Shows how to switch between several predefined low-power operationmodes.</td><td><a href="../mqx/examples/lowpower/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>lowpower_vybrid</td><td>Shows Vybrid circling through different power modes (RUN / SLEEP / WAIT  / STOP).</td>  <td><a href="../mqx/examples/lowpower_vybrid/Readme.txt"><img src=".doc/img/txt_icon.png" alt="" /></a></td>
+                                </tr>
+                                <tr><td>lwadc</td><td>Shows usage of the ADC driver, sampling analog values from the two ADC  channels.</td><td><a href="../mqx/examples/lwadc/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>lwdemo</td><td>Same as the "demo" application, but implemented using lightweight  components only.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>lwdemo_usr</td><td>Shows MQX multitasking and inter-process communication using user mode  tasks and lightweight objects such as semaphores, events, or messages.</td><td><a href="../mqx/examples/lwdemo_usr/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>lwevent</td>   <td>Simple demonstration of MQX lightweight events.</td><td><a href="../mqx/examples/lwevent/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>lwlog</td>   <td>Simple demonstration of MQX lightweight log feature.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>lwmsgq</td>   <td>Simple demonstration of MQX lightweight inter-process messaging.</td><td><a href="../mqx/examples/lwmsgq/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>lwsem</td><td>Simple demonstration of MQX task synchronization using the lightweight  semaphore object.</td><td><a href="../mqx/examples/lwsem/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>lwsem_usr</td><td>Simple demonstration of MQX user/privilege task synchronization using  the lightweight semaphore object.</td><td><a href="../mqx/examples/lwsem_usr/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>msg</td>   <td>Simple demonstration of the MQX inter-process message passing.</td><td><a href="../mqx/examples/msg/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>multicore</td>   <td>Shows usage of the multicore communication components.</td><td><a href="../mqx/examples/multicore/core_mutex/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>multidrop</td>   <td>Demonstration of the UART-based multidrop.</td><td><a href="../mqx/examples/multidrop/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>mutex</td>   <td>Simple demonstration of MQX task synchronization using the mutex object.</td><td><a href="../mqx/examples/mutex/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>nandflash</td>   <td>A demonstration of the NAND Flash driver functionality.</td><td><a href="../mqx/examples/nandflash/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>nill</td><td>Even simpler than Hello World. A void application which may be used for  copy/paste to start custom application.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>qspi</td><td>Shows basic operations of the QSPI driver including the initialization  of the controller, erasing flash memory, and read/write operations.</td><td><a href="../mqx/examples/qspi/readme.txt"><img src=".doc/img/txt_icon.png" alt="" /></a></td>
+                                </tr>
+                                <tr><td>rs485</td>   <td>Shows how to use the RS485 over a serial driver.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>rtc</td><td>Shows the Real Time Clock module API. Demonstrates how to synchronize  RTC and MQX time and how to use RTC alarm interrupts.</td><td><a href="../mqx/examples/rtc/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>sai_dma_demo</td><td>Shows the use of the DMA driven SAI driver. TWR-SGT-l5000 board is  needed for this example.</td><td><a href="../mqx/examples/sai_dma_demo/Readme.txt"><img src=".doc/img/txt_icon.png" alt="" /></a></td>
+                                </tr>
+                                <tr><td>sem</td><td>Simple demonstration of MQX task synchronization using the semaphore  object.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>spi, spi_legacy</td><td>Shows how to read/write data from/to external SPI EEPROM. Additional HW  setup is needed.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>taskat</td><td>Shows how task can be created within statically allocated memory buffer  (avoid heap allocation for task stack and context). taskq  Shows custom task queue and how the queue can be suspended and resumed.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>tchres</td><td>Example applications demonstrating resistive touchscreen functionality  with the TWR-LCD board.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>test</td>   <td>Shows the self-testing feature of each MQX component.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>tfs</td>   <td>Shows the usage of ROM-based Trivial File System in an MQX application.</td><td>&nbsp;</td>
+                                </tr>
+                                <tr><td>timer</td>   <td>Simple demonstration of MQX timer component.</td><td><a href="../mqx/examples/timer/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>usermode</td>   <td>Memory management and dynamic task creation from user-mode tasks.</td><td><a href="../mqx/examples/usermode/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                                <tr><td>watchdog</td><td>Simple demonstration of MQX task timeout detection using the kernel (not  to be confused with watchdog) component.</td><td><a href="../mqx/examples/watchdog/_README.pdf"><img src=".doc/img/pdf_icon.gif" alt="" /></a></td>
+                                </tr>
+                            </table>
+                        </div>                                                             
+                    </div>                                         
+                    <!-- EXAMPLES END ********************************** -->                                                                                
+                </div>	                                                     
+            </div>              		                   
+        </div>    
+    </div>	               
+    </body>
+</html>

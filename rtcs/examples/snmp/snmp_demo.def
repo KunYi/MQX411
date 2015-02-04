@@ -1,0 +1,162 @@
+-- HEADER --------------------------------------------------------------
+-- ---------------------------------------------------------------------
+--
+--  Comments:  This file contains an implementation of the 
+--  MQX SNMP DEMO MIB.
+--
+-- ---------------------------------------------------------------------
+-- END -----------------------------------------------------------------
+
+-- Definitions for SNMP DEMO-MIB
+
+-- User's MIB file should start with enterprises company number here.
+-- For example we use number 33118 (Freescale), please change this OID to your's
+-- company OID
+
+your_company           	enterprises.33118
+
+mqx_demo				your_company.1
+demo1					mqx_demo.1
+data					demo1.1
+
+%% DisplayString OCTET
+
+hello_string			data.1	DisplayString   read-only       mandatory
+counter					data.2	INTEGER         read-only       mandatory
+alarm_limit				data.3	INTEGER         read-write      mandatory
+
+traps					demo1.2
+trapmsg1				traps.1	DisplayString   read-only       mandatory
+%%
+
+#if ! RTCSCFG_ENABLE_IP4 
+  #error This application requires RTCSCFG_ENABLE_IP4 defined non-zero in user_config.h. Please recompile BSP with this option.
+#endif
+
+#if ! RTCSCFG_ENABLE_SNMP 
+  #error This application requires RTCSCFG_ENABLE_SNMP defined non-zero in user_config.h. Please recompile BSP with this option.
+#endif
+
+
+/****************************************************************/
+#include <mqx.h>
+#include <bsp.h>
+
+#include "snmp_demo.h"
+#include "snmpcfg.h"
+#include "snmp.h"
+
+#define COUNTER_OVERFLOW    5
+#define COUNTER_DELAY       5000
+
+#define TRAP_SPEC   3
+
+#define SEND_TRAP_V1    1
+#define SEND_TRAP_V2    1
+
+void MIBdemo_init(void);
+static uint_32 i = 0;
+static uint_32 alarm_limit = COUNTER_OVERFLOW;
+
+void MIBdemo_init(void)
+{
+    RTCSMIB_mib_add(&MIBNODE_your_company);
+}
+
+
+uint_32 Get_timer( pointer dummy )
+{
+    return(i);
+}
+
+static void Set_timer( uint_32 value)
+{
+	i = value;
+}
+
+uint_32 Get_alarm_limit( pointer dummy )
+{
+	return(alarm_limit);
+}
+
+uint_32 MIB_set_alarm_limit (pointer dummy, uchar_ptr varptr, uint_32 varlen)
+{ /* Body */
+    int_32 varval = RTCSMIB_int_read(varptr, varlen);
+	alarm_limit = varval;	
+    return(0); /*SNMP_ERROR_noError;*/
+} /* Endbody */
+
+void Snmp_task( uint_32 temp )
+{
+	
+	// show welcome screen on serial
+	printf("\n\rSNMP demo started. You can change the counter value \
+		through the SNMP protocole. \n\rCouner value: \n\r");	
+	for(;;)
+	{
+		printf("%d, ", i);
+		_time_delay(COUNTER_DELAY);
+		i++;				
+		// test for alarm limit
+		if(i > alarm_limit)
+		{	
+			// Send the alarm trap and clear counter
+			#ifdef SEND_TRAP_V2
+			  SNMPv2_trap_userSpec( (RTCSMIB_NODE *)&MIBNODE_trapmsg1 );
+			#endif
+			#ifdef SEND_TRAP_V1
+			  SNMP_trap_userSpec( (RTCSMIB_NODE *)&MIBNODE_counter, TRAP_SPEC, 
+			      (RTCSMIB_NODE *)&MIBNODE_your_company );
+			#endif
+			printf("\n\rTrap sent; Counter value:\n\r");
+			Set_timer(0);
+		}
+	}
+}
+
+/****************************************************************/
+const RTCSMIB_VALUE MIBVALUE_your_company = {
+	RTCSMIB_NODETYPE_INT_CONST,
+	NULL
+};
+
+const RTCSMIB_VALUE MIBVALUE_demo1 = {
+	RTCSMIB_NODETYPE_INT_CONST,
+	NULL
+};
+
+const RTCSMIB_VALUE MIBVALUE_mqx_demo = {
+	RTCSMIB_NODETYPE_INT_CONST,
+	NULL
+};
+
+const RTCSMIB_VALUE MIBVALUE_traps = {
+	RTCSMIB_NODETYPE_INT_CONST,
+	NULL
+};
+const RTCSMIB_VALUE MIBVALUE_data = {
+	RTCSMIB_NODETYPE_INT_CONST,
+	NULL
+};
+
+const RTCSMIB_VALUE MIBVALUE_hello_string = {
+	RTCSMIB_NODETYPE_DISPSTR_PTR,
+	(void _PTR_)"MQX SNMP demo"
+};
+
+const RTCSMIB_VALUE MIBVALUE_counter = {
+	RTCSMIB_NODETYPE_UINT_FN,
+	(void _PTR_)Get_timer
+};
+
+const RTCSMIB_VALUE MIBVALUE_alarm_limit = {
+	RTCSMIB_NODETYPE_UINT_FN,
+	(void _PTR_)Get_alarm_limit
+};
+
+const RTCSMIB_VALUE MIBVALUE_trapmsg1 = {
+	RTCSMIB_NODETYPE_DISPSTR_PTR,
+	(void _PTR_)"Counter reset"
+};
+
+/* EOF */

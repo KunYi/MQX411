@@ -1,0 +1,169 @@
+<?xml version="1.0"?><projectDescription>
+
+	<name>ffs_twrvf65gs10_a5</name>
+
+	<comment></comment>
+
+	<projects>
+
+	</projects>
+
+	<buildSpec>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+
+			<triggers>clean,full,incremental,</triggers>
+
+			<arguments>
+
+				<dictionary>
+
+					<key>?name?</key>
+
+					<value></value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.append_environment</key>
+
+					<value>true</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
+
+					<value>all</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.buildArguments</key>
+
+					<value></value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.buildCommand</key>
+
+					<value>make</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.buildLocation</key>
+
+					<value>${ProjDirPath}/Build</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
+
+					<value>clean</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.contents</key>
+
+					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
+
+					<value>false</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
+
+					<value>true</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
+
+					<value>true</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
+
+					<value>all</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.stopOnError</key>
+
+					<value>true</value>
+
+				</dictionary>
+
+				<dictionary>
+
+					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
+
+					<value>true</value>
+
+				</dictionary>
+
+			</arguments>
+
+		</buildCommand>
+
+		<buildCommand>
+
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+
+			<triggers>full,incremental,</triggers>
+
+			<arguments>
+
+			</arguments>
+
+		</buildCommand>
+
+	</buildSpec>
+
+	<natures>
+
+		<nature>org.eclipse.cdt.core.cnature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+
+	</natures>
+
+	<linkedResources>
+
+	<link><name>FFS_Source/wearleveling/buffer_manager</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/buffer_manager/media_buffer.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/buffer_manager/media_buffer.h</locationURI></link><link><name>FFS_Source/wearleveling/buffer_manager</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/buffer_manager/media_buffer_manager.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/buffer_manager/media_buffer_manager.cpp</locationURI></link><link><name>FFS_Source/wearleveling/buffer_manager</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/buffer_manager/media_buffer_manager.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/buffer_manager/media_buffer_manager.h</locationURI></link><link><name>FFS_Source/wearleveling/buffer_manager</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/buffer_manager/media_buffer_manager_init.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/buffer_manager/media_buffer_manager_init.cpp</locationURI></link><link><name>FFS_Source/wearleveling/buffer_manager</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/buffer_manager/media_buffer_manager_internal.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/buffer_manager/media_buffer_manager_internal.h</locationURI></link><link><name>FFS_Source/wearleveling/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/common/double_list.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/common/double_list.cpp</locationURI></link><link><name>FFS_Source/wearleveling/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/common/double_list.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/common/double_list.h</locationURI></link><link><name>FFS_Source/wearleveling/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/common/red_black_tree.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/common/red_black_tree.cpp</locationURI></link><link><name>FFS_Source/wearleveling/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/common/red_black_tree.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/common/red_black_tree.h</locationURI></link><link><name>FFS_Source/wearleveling/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/common/wlru.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/common/wlru.cpp</locationURI></link><link><name>FFS_Source/wearleveling/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/common/wlru.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/common/wlru.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common/ddi_block.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/common/ddi_block.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common/ddi_block.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/common/ddi_block.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common/ddi_nand_ddi.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/common/ddi_nand_ddi.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common/deferred_task.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/common/deferred_task.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common/deferred_task.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/common/deferred_task.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common/ddi_metadata.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/common/ddi_metadata.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common/ddi_metadata.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/common/ddi_metadata.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common/ddi_page.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/common/ddi_page.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common/ddi_page.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/common/ddi_page.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common/page_order_map.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/common/page_order_map.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/common/page_order_map.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/common/page_order_map.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive/ddi_nand_data_drive.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/data_drive/ddi_nand_data_drive.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive/ddi_nand_data_drive_erase.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/data_drive/ddi_nand_data_drive_erase.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive/ddi_nand_data_drive_get_info.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/data_drive/ddi_nand_data_drive_get_info.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive/ddi_nand_data_drive_init.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/data_drive/ddi_nand_data_drive_init.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive/ddi_nand_data_drive_read_sector.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/data_drive/ddi_nand_data_drive_read_sector.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive/ddi_nand_data_drive_set_info.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/data_drive/ddi_nand_data_drive_set_info.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive/ddi_nand_ndd_flush.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/data_drive/ddi_nand_ndd_flush.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive/ddi_nand_ndd_write_sector.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/data_drive/ddi_nand_ndd_write_sector.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive/ddi_nand_nssm_get_entry.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/data_drive/ddi_nand_nssm_get_entry.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive/nonsequential_sectors_map.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/data_drive/nonsequential_sectors_map.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/data_drive/nonsequential_sectors_map.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/data_drive/nonsequential_sectors_map.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi_ldl</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi_ldl/ddi_ldl_drive_get_info.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi_ldl/ddi_ldl_drive_get_info.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi_ldl</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi_ldl/ddi_ldl_init.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi_ldl/ddi_ldl_init.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi_ldl</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi_ldl/ddi_ldl_iterator.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi_ldl/ddi_ldl_iterator.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi_ldl</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi_ldl/ddi_ldl_read.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi_ldl/ddi_ldl_read.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi_ldl</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi_ldl/ddi_ldl_util.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi_ldl/ddi_ldl_util.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi_ldl</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi_ldl/ddi_ldl_write.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi_ldl/ddi_ldl_write.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/ddi_nand_mapper_get_info.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/ddi_nand_mapper_get_info.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/ddi_nand_mapper_utilities.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/ddi_nand_mapper_utilities.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/ddi_nand_mapper_zone_map_cache_lookup.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/ddi_nand_mapper_zone_map_cache_lookup.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/mapper.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/mapper.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/mapper.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/mapper.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/persistent_map.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/persistent_map.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/persistent_map.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/persistent_map.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/persistent_phy_map.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/persistent_phy_map.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/persistent_phy_map.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/persistent_phy_map.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/phy_map.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/phy_map.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/phy_map.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/phy_map.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/zone_map_cache.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/zone_map_cache.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/zone_map_cache.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/zone_map_cache.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/zone_map_section_page.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/zone_map_section_page.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/mapper/zone_map_section_page.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/mapper/zone_map_section_page.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media/bad_block_table.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/media/bad_block_table.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media/bad_block_table.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/media/bad_block_table.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media/ddi_nand_media.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/media/ddi_nand_media.h</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media/ddi_nand_media_allocate.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/media/ddi_nand_media_allocate.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media/ddi_nand_media_discover.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/media/ddi_nand_media_discover.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media/ddi_nand_media_get_info.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/media/ddi_nand_media_get_info.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media/ddi_nand_media_init.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/media/ddi_nand_media_init.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media/ddi_nand_media_regions.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/media/ddi_nand_media_regions.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media/ddi_nand_media_shutdown.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/media/ddi_nand_media_shutdown.cpp</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi/media/region.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi/media/region.h</locationURI></link><link><name>FFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/nandflash_wl.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/nandflash_wl.cpp</locationURI></link><link><name>FFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/nandflash_wl.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/nandflash_wl.h</locationURI></link><link><name>FFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/nandflash_wl_ffs.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/nandflash_wl_ffs.h</locationURI></link><link><name>FFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/nandflash_wl_prv.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/nandflash_wl_prv.h</locationURI></link><link><name>FFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/nandflash_wl_init.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/nandflash_wl_init.cpp</locationURI></link><link><name>FFS_Source</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/nandflash_wl_config.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/nandflash_wl_config.h</locationURI></link><link><name>FFS_Source/wearleveling/hal</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/hal/ddi_nand.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/hal/ddi_nand.h</locationURI></link><link><name>FFS_Source/wearleveling/hal</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/hal/ddi_nand_hal.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/hal/ddi_nand_hal.h</locationURI></link><link><name>FFS_Source/wearleveling/hal</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/hal/ddi_nand_hal_common.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/hal/ddi_nand_hal_common.cpp</locationURI></link><link><name>FFS_Source/wearleveling/hal</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/hal/ddi_nand_hal_globals.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/hal/ddi_nand_hal_globals.cpp</locationURI></link><link><name>FFS_Source/wearleveling/hal</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/hal/ddi_nand_hal_init.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/hal/ddi_nand_hal_init.cpp</locationURI></link><link><name>FFS_Source/wearleveling/hal</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/hal/ddi_nand_hal_internal.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/hal/ddi_nand_hal_internal.h</locationURI></link><link><name>FFS_Source/wearleveling/hal</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/hal/ddi_nand_hal_nfcphymedia.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/hal/ddi_nand_hal_nfcphymedia.cpp</locationURI></link><link><name>FFS_Source/wearleveling/hal</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/hal/ddi_nand_hal_nfcphymedia.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/hal/ddi_nand_hal_nfcphymedia.h</locationURI></link><link><name>FFS_Source/wearleveling/nfc_wl</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/nfc_wl/nfc_wl.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/nfc_wl/nfc_wl.cpp</locationURI></link><link><name>FFS_Source/wearleveling/nfc_wl</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/nfc_wl/nfc_wl.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/nfc_wl/nfc_wl.h</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx/deferred_task_queue.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/rtos/mqx/deferred_task_queue.cpp</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx/deferred_task_queue.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/rtos/mqx/deferred_task_queue.h</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx/errcode.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/rtos/mqx/errcode.cpp</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx/errcode.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/rtos/mqx/errcode.h</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx/mem_management.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/rtos/mqx/mem_management.cpp</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx/mem_management.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/rtos/mqx/mem_management.h</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx/mem_management_internal.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/rtos/mqx/mem_management_internal.h</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx/simple_mutex.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/rtos/mqx/simple_mutex.cpp</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx/simple_mutex.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/rtos/mqx/simple_mutex.h</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx/simple_timer.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/rtos/mqx/simple_timer.cpp</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx/simple_timer.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/rtos/mqx/simple_timer.h</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/rtos/mqx/wl_types.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/rtos/mqx/wl_types.h</locationURI></link><link><name>FFS_Source/wearleveling</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/auto_free.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/auto_free.h</locationURI></link><link><name>FFS_Source/wearleveling</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi_media.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi_media.h</locationURI></link><link><name>FFS_Source/wearleveling</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi_media_errordefs.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi_media_errordefs.h</locationURI></link><link><name>FFS_Source/wearleveling</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi_media_internal.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi_media_internal.h</locationURI></link><link><name>FFS_Source/wearleveling</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/ddi_nand_media_definition.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/ddi_nand_media_definition.cpp</locationURI></link><link><name>FFS_Source/wearleveling</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/drive_tags.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/drive_tags.h</locationURI></link><link><name>FFS_Source/wearleveling</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/sectordef.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/sectordef.h</locationURI></link><link><name>FFS_Source/wearleveling</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/wl_common.cpp</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/wl_common.cpp</locationURI></link><link><name>FFS_Source/wearleveling</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>FFS_Source/wearleveling/wl_common.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/source/wearleveling/wl_common.h</locationURI></link></linkedResources>
+
+	<variableList>
+
+	<variable><name>MQX_ROOT_DIR</name><value>${PROJECT_LOC}/../../../..</value></variable></variableList>
+
+</projectDescription>
