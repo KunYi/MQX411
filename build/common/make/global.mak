@@ -4,7 +4,9 @@
 #----------------------------------------------------------
 HOSTENV = UNIX
 # HOSTENV = WINDOWS
-
+ifeq ($(GCC_REV),)
+GCC_REV = 4.8.4
+endif
 #----------------------------------------------------------
 # set default path to toolchain
 #----------------------------------------------------------
@@ -23,9 +25,9 @@ HOSTENV = UNIX
 # ifeq ($(TOOL),gcc_cs)
 # TOOLCHAIN_ROOTDIR = C:/PROGRA~1/CODESO~1/SOURCE~2
 # endif
-# ifeq ($(TOOL),gcc_arm)
-# TOOLCHAIN_ROOTDIR = C:/PROGRA~1/GNUTOO~1/43F2B~1.720
-# endif
+ifeq ($(TOOL),gcc_arm)
+TOOLCHAIN_ROOTDIR = /home/kunyi/emgcc/gcc-arm-none-eabi-4_8-2014q3
+endif
 # ifeq ($(TOOL),kds)
 # TOOLCHAIN_ROOTDIR = C:/FREESC~1/KDS_1.0
 # endif
