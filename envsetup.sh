@@ -12,6 +12,12 @@ function elf2bin()
 {
 	arm-none-eabi-objcopy -O binary $@.elf $@.bin
 }
+
+function cp2med()
+{
+	cp $@.bin /media/MBED
+}
+
 export MQX_ROOTDIR=/home/kunyi/MQX411
 export PATH=/home/kunyi/emgcc/gcc-arm-none-eabi-4_9-2014q4/bin/:$PATH
 export GCC_REV=4.9.3
