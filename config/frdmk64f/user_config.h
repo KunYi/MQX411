@@ -94,6 +94,9 @@
 */
 
 
+#define MQX_USE_LOGS			1
+#define MQX_USE_SEMAPHORES		1
+#define MQX_HAS_TIME_SLICE		1
 /* use the rest of defaults from small-RAM-device profile */
 #include "small_ram_config.h"
 
