@@ -5,7 +5,7 @@
 HOSTENV = UNIX
 # HOSTENV = WINDOWS
 ifeq ($(GCC_REV),)
-GCC_REV = 4.8.4
+GCC_REV = 4.9.3
 endif
 #----------------------------------------------------------
 # set default path to toolchain
@@ -26,7 +26,18 @@ endif
 # TOOLCHAIN_ROOTDIR = C:/PROGRA~1/CODESO~1/SOURCE~2
 # endif
 ifeq ($(TOOL),gcc_arm)
+# GCC ARM Embedded 4.9 2014q4
+ifeq ("$(GCC_REV)", "4.9.3")
+TOOLCHAIN_ROOTDIR = /home/kunyi/emgcc/gcc-arm-none-eabi-4_9-2014q4
+endif
+# GCC ARM Embedded 4.8.4 2014q3
+ifeq ("$(GCC_REV)", "4.8.4")
 TOOLCHAIN_ROOTDIR = /home/kunyi/emgcc/gcc-arm-none-eabi-4_8-2014q3
+endif
+# GCC ARM Embedded 4.8.3 2014q1	
+ifeq ("$(GCC_REV)", "4.8.3")
+TOOLCHAIN_ROOTDIR = /home/kunyi/emgcc/gcc-arm-none-eabi-4_8-2014q1
+endif
 endif
 # ifeq ($(TOOL),kds)
 # TOOLCHAIN_ROOTDIR = C:/FREESC~1/KDS_1.0
