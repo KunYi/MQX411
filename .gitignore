@@ -26,3 +26,8 @@
 *.exe
 *.out
 *.app
+
+# mqx default & example folder
+lib/*
+mqx/**/gcc_arm/*
+demo/**/gcc_arm/*
