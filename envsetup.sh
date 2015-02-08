@@ -19,6 +19,7 @@ function cp2med()
 }
 
 export MQX_ROOTDIR=/home/kunyi/MQX411
-export PATH=/home/kunyi/emgcc/gcc-arm-none-eabi-4_9-2014q4/bin/:$PATH
 export GCC_REV=4.9.3
+export TOOLCHAIN_ROOTDIR=/home/kunyi/emgcc/gcc-arm-none-eabi-4_9-2014q4
+export PATH=$TOOLCHAIN_ROOTDIR/bin/:$PATH
 

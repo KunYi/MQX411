@@ -26,6 +26,7 @@ endif
 # TOOLCHAIN_ROOTDIR = C:/PROGRA~1/CODESO~1/SOURCE~2
 # endif
 ifeq ($(TOOL),gcc_arm)
+ifeq ($(TOOLCHAIN_ROOTDIR),)
 # GCC ARM Embedded 4.9 2014q4
 ifeq ("$(GCC_REV)", "4.9.3")
 TOOLCHAIN_ROOTDIR = /home/kunyi/emgcc/gcc-arm-none-eabi-4_9-2014q4
@@ -38,6 +39,9 @@ endif
 ifeq ("$(GCC_REV)", "4.8.3")
 TOOLCHAIN_ROOTDIR = /home/kunyi/emgcc/gcc-arm-none-eabi-4_8-2014q1
 endif
+# end of ifeq($(TOOLCHAIN_ROOTDIR),)
+endif
+# end of ifeq($(TOOL),gcc_arm)
 endif
 # ifeq ($(TOOL),kds)
 # TOOLCHAIN_ROOTDIR = C:/FREESC~1/KDS_1.0
@@ -45,7 +49,6 @@ endif
 # ifeq ($(TOOL),ds5)
 # TOOLCHAIN_ROOTDIR = C:/PROGRA~1/DS-5
 # endif
-
 #----------------------------------------------------------
 # macro, convert slash to backslash
 # $(1) - processed string
