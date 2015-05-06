@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-echo "setting build environment for MQX411 with gcc-arm-none-eabi-4_9-2014q4"
+echo "setting build environment for MQX411 with gcc-arm-none-eabi-4_9-2015q1"
 
 # copy from AOSP
 function cgrep()
@@ -20,6 +20,6 @@ function cp2med()
 
 export MQX_ROOTDIR=/home/kunyi/MQX411
 export GCC_REV=4.9.3
-export TOOLCHAIN_ROOTDIR=/home/kunyi/emgcc/gcc-arm-none-eabi-4_9-2014q4
-export PATH=$TOOLCHAIN_ROOTDIR/bin/:$PATH
+export TOOLCHAIN_ROOTDIR=/home/kunyi/emgcc/gcc-arm-none-eabi-4_9-2015q1
+export PATH=${TOOLCHAIN_ROOTDIR}/bin:$PATH
 
